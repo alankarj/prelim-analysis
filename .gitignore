@@ -1,3 +1,5 @@
+jupyter-notebooks/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -99,3 +101,14 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+.DS_Store
+.idea/codeStyles/Project.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/vcs.xml
+.idea/
+data/
+src/.DS_Store
+src/weights_0.t7
+src/weights_1.t7
+src/weights_all.t7
