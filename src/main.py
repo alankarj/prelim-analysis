@@ -31,19 +31,10 @@ tei_1 = [57, 287, 68, 305, 339, 48, 533, 328, 237, 507, 270, 1, 346, 492, 133, 1
 
 
 def main(**kwargs):
-    # Model
-    if social_reasoner == 1:
-        je = SocialReasoner(social_input_size, hidden_size, social_output_size, leaky_slope, window)
-        social = True
-    else:
-        je = JointEstimator(input_size, hidden_size, output_size, leaky_slope, window)
-        social = False
-
-
     # Data preparation
     data = pickle.load(open(data_path + train_data_fname, 'rb'))
     # print(data)
-    u_true, r_true, n_tot, U_full, A_full, R_full = prepare_data(data)
+    u_true, r_true, n_tot, U_full, A_full, R_full, AT_full = prepare_data(data)
     clusters = list(n_tot.keys())
 
     N = u_true[c].shape[0]
@@ -61,22 +52,22 @@ def main(**kwargs):
     train_data_type = data_types[0]
     eval_data_type = data_types[1]
 
-    u_tr_new, r_tr_new, R_f_new, U_f_new, A_f_new = prep_data(u_true[c], r_true[c], R_full[c], U_full[c], A_full[c])
+    u_tr_new, r_tr_new, R_f_new, U_f_new, A_f_new, AT_f_new = prep_data(u_true[c], r_true[c], R_full[c], U_full[c], A_full[c], AT_full[c])
     # print(u_tr_new.shape)
     # print(r_tr_new.shape)
     # print(R_f_new.shape)
     # print(U_f_new.shape)
     # print(A_f_new.shape)
 
-    u_tr_f, r_tr_f, R_f, U_f, A_f = get_final_data(data_types, train_indices, valid_indices, test_indices, u_tr_new, r_tr_new, R_f_new, U_f_new, A_f_new)
+    u_tr_f, r_tr_f, R_f, U_f, A_f, AT_f = get_final_data(data_types, train_indices, valid_indices, test_indices, u_tr_new, r_tr_new, R_f_new, U_f_new, A_f_new, AT_f_new)
     # print(u_true[c][train_indices].shape)
     # print(r_true[c][train_indices].shape)
     # print(R_full[c][:, train_indices, :].shape)
     # print(U_full[c][:, train_indices, :].shape)
     # print(A_full[c][:, train_indices, :].shape)
 
-    u_tr, r_tr, R, U, A = upsample_data(u_true[c][train_indices], r_true[c][train_indices], R_full[c][:, train_indices, :],
-                                        U_full[c][:, train_indices, :], A_full[c][:, train_indices, :], window)
+    u_tr, r_tr, R, U, A, AT = upsample_data(u_true[c][train_indices], r_true[c][train_indices], R_full[c][:, train_indices, :],
+                                        U_full[c][:, train_indices, :], A_full[c][:, train_indices, :], AT_full[c][:, train_indices, :], window)
 
     # scaler = preprocessing.StandardScaler()
     # scaler.fit(R)
@@ -88,18 +79,36 @@ def main(**kwargs):
     # if social_reasoner == 1:
     # U = get_new_U(U)
 
-    trainer = Trainer(je, lr, n_epochs, print_every, thresh, social=social)
-    trainer.train(u_tr, r_tr, R, U, A)
+    # for ls in [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
+    #     print("Leaky slope: ", ls)
 
-    torch.save(je.state_dict(), 'weights_' + str(c) + '.t7')
+    for ne in n_epochs:
 
-    R_eval = R_f[eval_data_type]
+        # seed = 0
+        # torch.manual_seed(seed)
+        # np.random.seed(seed)
+        # random.seed(seed)
+
+        print("Number of epochs: ", ne)
+        # Model
+        if social_reasoner == 1:
+            je = SocialReasoner(social_input_size, hidden_size, social_output_size, leaky_slope, window)
+            social = True
+        else:
+            je = JointEstimator(input_size, hidden_size, output_size, leaky_slope, window)
+            social = False
+        trainer = Trainer(je, lr, ne, print_every, thresh, social=social)
+        trainer.train(u_tr, r_tr, R, U, A, AT)
+
+        torch.save(je.state_dict(), 'weights_' + str(c) + '.t7')
+
+        R_eval = R_f[eval_data_type]
     # R_eval = torch.Tensor(scaler.transform(R_f[eval_data_type]))
     # if social_reasoner == 1:
     #     U_eval = get_new_U(U_f[eval_data_type])
     # else:
-    U_eval = U_f[eval_data_type]
-    trainer.eval(u_tr_f[eval_data_type], r_tr_f[eval_data_type], R_eval, U_eval, A_f[eval_data_type])
+        U_eval = U_f[eval_data_type]
+        trainer.eval(u_tr_f[eval_data_type], r_tr_f[eval_data_type], R_eval, U_eval, A_f[eval_data_type], AT_f[eval_data_type])
 
 
 def get_new_U(U):
@@ -112,6 +121,7 @@ def get_new_U(U):
     U_o_new = torch.cat([U_o, ones], 1)[:, :, None]
     U = torch.cat([U_z_new, U_o_new], 2)
     return U
+
 
 if __name__ == '__main__':
     main()

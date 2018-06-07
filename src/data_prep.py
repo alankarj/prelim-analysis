@@ -9,6 +9,7 @@ def prepare_data(data):
     U_full = {}
     A_full = {}
     R_full = {}
+    AT_full = {}
 
     # True values.
     u_true = {}
@@ -17,7 +18,7 @@ def prepare_data(data):
     # Total number of data points.
     n_tot = {}
 
-    input_variables = ['user_cs_inp', 'agent_cs_inp', 'rapp_inp']
+    input_variables = ['user_cs_inp', 'agent_cs_inp', 'rapp_inp', 'agent_intention_inp']
     output_variables = ['user_cs_outp', 'rapp_outp']
 
     for k, val in data.items():
@@ -27,9 +28,10 @@ def prepare_data(data):
         n_tot[k] = u_true[k].shape[0]
         U_full[k] = np.concatenate(( add_axis(val[all_keys[2]]), add_axis(val[all_keys[3]]) ))
         A_full[k] = np.concatenate(( add_axis(val[all_keys[4]]), add_axis(val[all_keys[5]]) ))
-        R_full[k] = np.concatenate(( add_axis(val[all_keys[6]]), add_axis(val[all_keys[7]]) ))
+        R_full[k] = np.concatenate(( add_axis(val[all_keys[8]]), add_axis(val[all_keys[9]]) ))
+        AT_full[k] = np.concatenate((add_axis(val[all_keys[6]]), add_axis(val[all_keys[7]])))
 
-    return u_true, r_true, n_tot, U_full, A_full, R_full
+    return u_true, r_true, n_tot, U_full, A_full, R_full, AT_full
 
 
 def upsampled_tuple(X):
@@ -40,16 +42,17 @@ def upsampled_tuple(X):
     return other_us
 
 
-def prep_data(u_true, r_true, R_full, U_full, A_full):
+def prep_data(u_true, r_true, R_full, U_full, A_full, AT_full):
     u_tr_f = u_true
     r_tr_f = r_true
     R_f = R_full.squeeze().transpose()
     U_f = numpy_view(U_full)
     A_f = numpy_view(A_full)
-    return u_tr_f, r_tr_f, R_f, U_f, A_f
+    AT_f = numpy_view(AT_full)
+    return u_tr_f, r_tr_f, R_f, U_f, A_f, AT_f
 
 
-def upsample_data(u_true, r_true, R_full, U_full, A_full, window):
+def upsample_data(u_true, r_true, R_full, U_full, A_full, AT_full, window):
     # Last index corresponds to NONE conversational strategy
     u_none = np.where(u_true[:, -1] == 1)[0]
     ns = u_none.shape[0]
@@ -100,10 +103,15 @@ def upsample_data(u_true, r_true, R_full, U_full, A_full, window):
     tup.append(A_temp[u_none, :, :])
     A_f = np.concatenate(tuple(tup))
 
-    assert R_f.shape[-1] == U_f.shape[-1] == A_f.shape[-1] == window
-    assert u_tr_f.shape[0] == r_tr_f.shape[0] == R_f.shape[0] == U_f.shape[0] == A_f.shape[0]
+    AT_temp = numpy_view(AT_full)
+    tup = [re_sample(AT_temp[uo, :, :], ns) for uo in us_other]
+    tup.append(AT_temp[u_none, :, :])
+    AT_f = np.concatenate(tuple(tup))
 
-    return torch.Tensor(u_tr_f), torch.Tensor(r_tr_f), torch.Tensor(R_f), torch.Tensor(U_f), torch.Tensor(A_f)
+    assert R_f.shape[-1] == U_f.shape[-1] == A_f.shape[-1] == AT_f.shape[-1] == window
+    assert u_tr_f.shape[0] == r_tr_f.shape[0] == R_f.shape[0] == U_f.shape[0] == A_f.shape[0] == AT_f.shape[0]
+
+    return torch.Tensor(u_tr_f), torch.Tensor(r_tr_f), torch.Tensor(R_f), torch.Tensor(U_f), torch.Tensor(A_f), torch.Tensor(AT_f)
 
 
 def get_train_valid_test_indices(frac_valid, frac_test, N):
@@ -121,10 +129,11 @@ def get_train_valid_test_indices(frac_valid, frac_test, N):
     return train_indices, valid_indices, test_indices
 
 
-def get_final_data(data_types, train_indices, valid_indices, test_indices, u_tr_f, r_tr_f, R_f, U_f, A_f):
+def get_final_data(data_types, train_indices, valid_indices, test_indices, u_tr_f, r_tr_f, R_f, U_f, A_f, AT_f):
     U = {}
     A = {}
     R = {}
+    AT = {}
     u_tr = {}
     r_tr = {}
 
@@ -136,8 +145,9 @@ def get_final_data(data_types, train_indices, valid_indices, test_indices, u_tr_
         R[dt] = torch.Tensor(R_f[indices[i], :])
         U[dt] = torch.Tensor(U_f[indices[i], :])
         A[dt] = torch.Tensor(A_f[indices[i], :])
+        AT[dt] = torch.Tensor(AT_f[indices[i], :])
 
-    return u_tr, r_tr, R, U, A
+    return u_tr, r_tr, R, U, A, AT
 
 
 def numpy_view(np_array):

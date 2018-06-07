@@ -112,3 +112,7 @@ src/.DS_Store
 src/weights_0.t7
 src/weights_1.t7
 src/weights_all.t7
+
+src/log*
+src/weights*
+log_1_window.txt
