@@ -5,7 +5,7 @@ from sklearn.utils import resample
 
 
 def prepare_data(data):
-    # Input (un-processed) to the joint model.
+    # Possible inputs
     U_full = {}
     A_full = {}
     R_full = {}

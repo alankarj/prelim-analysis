@@ -1,12 +1,14 @@
 import torch
 import numpy as np
 import random
+import os
 from config import *
-from model import JointEstimator, SocialReasoner
+from model import JointEstimator
 import pickle
-from data_prep import prepare_data, upsample_data, get_train_valid_test_indices, get_final_data, prep_data
+import data_prep
+
 from trainer import Trainer
-from sklearn import preprocessing
+# from sklearn import preprocessing
 
 seed = 0
 torch.manual_seed(seed)
@@ -30,97 +32,97 @@ vi_1 = [239, 113, 325, 66, 479, 103, 386, 480, 400, 37, 71, 329, 450, 432, 310, 
 tei_1 = [57, 287, 68, 305, 339, 48, 533, 328, 237, 507, 270, 1, 346, 492, 133, 191, 120, 523, 93, 372, 29, 157, 244, 154, 358, 208, 20, 485, 484, 456, 319, 419, 463, 94, 425, 495, 466, 178, 135, 222, 82, 343, 404, 14, 16, 238, 247, 324, 331, 416, 403, 441, 395, 148]
 
 
-def main(**kwargs):
+def main():
     # Data preparation
     data = pickle.load(open(data_path + train_data_fname, 'rb'))
-    # print(data)
-    u_true, r_true, n_tot, U_full, A_full, R_full, AT_full = prepare_data(data)
-    clusters = list(n_tot.keys())
-
-    N = u_true[c].shape[0]
-    train_indices, valid_indices, test_indices = get_train_valid_test_indices(frac_valid, frac_test, N)
-
-    # print(train_indices)
-    # print(valid_indices)
-    # print(test_indices)
-    if c == 'all':
-        n = len(tri_0 + vi_0 + tei_0)
-        train_indices = tri_0 + [i + n for i in tri_1]
-        valid_indices = vi_0 + [i + n for i in vi_1]
-        test_indices = tei_0 + [i + n for i in tei_1]
-
-    train_data_type = data_types[0]
-    eval_data_type = data_types[1]
-
-    u_tr_new, r_tr_new, R_f_new, U_f_new, A_f_new, AT_f_new = prep_data(u_true[c], r_true[c], R_full[c], U_full[c], A_full[c], AT_full[c])
-    # print(u_tr_new.shape)
-    # print(r_tr_new.shape)
-    # print(R_f_new.shape)
-    # print(U_f_new.shape)
-    # print(A_f_new.shape)
-
-    u_tr_f, r_tr_f, R_f, U_f, A_f, AT_f = get_final_data(data_types, train_indices, valid_indices, test_indices, u_tr_new, r_tr_new, R_f_new, U_f_new, A_f_new, AT_f_new)
-    # print(u_true[c][train_indices].shape)
-    # print(r_true[c][train_indices].shape)
-    # print(R_full[c][:, train_indices, :].shape)
-    # print(U_full[c][:, train_indices, :].shape)
-    # print(A_full[c][:, train_indices, :].shape)
-
-    u_tr, r_tr, R, U, A, AT = upsample_data(u_true[c][train_indices], r_true[c][train_indices], R_full[c][:, train_indices, :],
-                                        U_full[c][:, train_indices, :], A_full[c][:, train_indices, :], AT_full[c][:, train_indices, :], window)
-
-    # scaler = preprocessing.StandardScaler()
-    # scaler.fit(R)
-    # print(scaler.mean_)
-    # print(scaler.scale_)
-    # # r_tr = scaler.transform(r_tr)
-    # R = torch.Tensor(scaler.transform(R))
-    # # Trainer class
-    # if social_reasoner == 1:
-    # U = get_new_U(U)
-
-    # for ls in [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
-    #     print("Leaky slope: ", ls)
-
-    for ne in n_epochs:
-
-        # seed = 0
-        # torch.manual_seed(seed)
-        # np.random.seed(seed)
-        # random.seed(seed)
-
-        print("Number of epochs: ", ne)
-        # Model
-        if social_reasoner == 1:
-            je = SocialReasoner(social_input_size, hidden_size, social_output_size, leaky_slope, window)
-            social = True
-        else:
-            je = JointEstimator(input_size, hidden_size, output_size, leaky_slope, window)
-            social = False
-        trainer = Trainer(je, lr, ne, print_every, thresh, social=social)
-        trainer.train(u_tr, r_tr, R, U, A, AT)
-
-        torch.save(je.state_dict(), 'weights_' + str(c) + '.t7')
-
-        R_eval = R_f[eval_data_type]
-    # R_eval = torch.Tensor(scaler.transform(R_f[eval_data_type]))
-    # if social_reasoner == 1:
-    #     U_eval = get_new_U(U_f[eval_data_type])
-    # else:
-        U_eval = U_f[eval_data_type]
-        trainer.eval(u_tr_f[eval_data_type], r_tr_f[eval_data_type], R_eval, U_eval, A_f[eval_data_type], AT_f[eval_data_type])
-
-
-def get_new_U(U):
-    n1, n2, n3 = U.shape
-    zeros = torch.zeros(n1, 1)
-    ones = torch.ones(n1, 1)
-    U_z = U[:, :, 0]
-    U_o = U[:, :, 1]
-    U_z_new = torch.cat([U_z, zeros], 1)[:, :, None]
-    U_o_new = torch.cat([U_o, ones], 1)[:, :, None]
-    U = torch.cat([U_z_new, U_o_new], 2)
-    return U
+    print(data[0].keys())
+    u_true, r_true, n_tot, U_full, A_full, R_full, AT_full = data_prep.prepare_data(data)
+#     clusters = list(n_tot.keys())
+#
+#     N = u_true[c].shape[0]
+#     train_indices, valid_indices, test_indices = get_train_valid_test_indices(frac_valid, frac_test, N)
+#
+#     # print(train_indices)
+#     # print(valid_indices)
+#     # print(test_indices)
+#     if c == 'all':
+#         n = len(tri_0 + vi_0 + tei_0)
+#         train_indices = tri_0 + [i + n for i in tri_1]
+#         valid_indices = vi_0 + [i + n for i in vi_1]
+#         test_indices = tei_0 + [i + n for i in tei_1]
+#
+#     train_data_type = data_types[0]
+#     eval_data_type = data_types[1]
+#
+#     u_tr_new, r_tr_new, R_f_new, U_f_new, A_f_new, AT_f_new = prep_data(u_true[c], r_true[c], R_full[c], U_full[c], A_full[c], AT_full[c])
+#     # print(u_tr_new.shape)
+#     # print(r_tr_new.shape)
+#     # print(R_f_new.shape)
+#     # print(U_f_new.shape)
+#     # print(A_f_new.shape)
+#
+#     u_tr_f, r_tr_f, R_f, U_f, A_f, AT_f = get_final_data(data_types, train_indices, valid_indices, test_indices, u_tr_new, r_tr_new, R_f_new, U_f_new, A_f_new, AT_f_new)
+#     # print(u_true[c][train_indices].shape)
+#     # print(r_true[c][train_indices].shape)
+#     # print(R_full[c][:, train_indices, :].shape)
+#     # print(U_full[c][:, train_indices, :].shape)
+#     # print(A_full[c][:, train_indices, :].shape)
+#
+#     u_tr, r_tr, R, U, A, AT = upsample_data(u_true[c][train_indices], r_true[c][train_indices], R_full[c][:, train_indices, :],
+#                                         U_full[c][:, train_indices, :], A_full[c][:, train_indices, :], AT_full[c][:, train_indices, :], window)
+#
+#     # scaler = preprocessing.StandardScaler()
+#     # scaler.fit(R)
+#     # print(scaler.mean_)
+#     # print(scaler.scale_)
+#     # # r_tr = scaler.transform(r_tr)
+#     # R = torch.Tensor(scaler.transform(R))
+#     # # Trainer class
+#     # if social_reasoner == 1:
+#     # U = get_new_U(U)
+#
+#     # for ls in [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]:
+#     #     print("Leaky slope: ", ls)
+#
+#     for ne in n_epochs:
+#
+#         # seed = 0
+#         # torch.manual_seed(seed)
+#         # np.random.seed(seed)
+#         # random.seed(seed)
+#
+#         print("Number of epochs: ", ne)
+#         # Model
+#         if social_reasoner == 1:
+#             je = SocialReasoner(social_input_size, hidden_size, social_output_size, leaky_slope, window)
+#             social = True
+#         else:
+#             je = JointEstimator(input_size, hidden_size, output_size, leaky_slope, window)
+#             social = False
+#         trainer = Trainer(je, lr, ne, print_every, thresh, social=social)
+#         trainer.train(u_tr, r_tr, R, U, A, AT)
+#
+#         torch.save(je.state_dict(), 'weights_' + str(c) + '.t7')
+#
+#         R_eval = R_f[eval_data_type]
+#     # R_eval = torch.Tensor(scaler.transform(R_f[eval_data_type]))
+#     # if social_reasoner == 1:
+#     #     U_eval = get_new_U(U_f[eval_data_type])
+#     # else:
+#         U_eval = U_f[eval_data_type]
+#         trainer.eval(u_tr_f[eval_data_type], r_tr_f[eval_data_type], R_eval, U_eval, A_f[eval_data_type], AT_f[eval_data_type])
+#
+#
+# def get_new_U(U):
+#     n1, n2, n3 = U.shape
+#     zeros = torch.zeros(n1, 1)
+#     ones = torch.ones(n1, 1)
+#     U_z = U[:, :, 0]
+#     U_o = U[:, :, 1]
+#     U_z_new = torch.cat([U_z, zeros], 1)[:, :, None]
+#     U_o_new = torch.cat([U_o, ones], 1)[:, :, None]
+#     U = torch.cat([U_z_new, U_o_new], 2)
+#     return U
 
 
 if __name__ == '__main__':
