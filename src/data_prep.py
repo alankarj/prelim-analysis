@@ -6,10 +6,10 @@ from sklearn.utils import resample
 
 def prepare_data(data):
     # Possible inputs
-    U_full = {}
-    A_full = {}
-    R_full = {}
-    AT_full = {}
+    U_full = {}  # User CS
+    A_full = {}  # Agent CS
+    R_full = {}  # Rapport
+    AT_full = {}  # Agent Task Strategy (TS)
 
     # True values.
     u_true = {}
@@ -18,18 +18,14 @@ def prepare_data(data):
     # Total number of data points.
     n_tot = {}
 
-    input_variables = ['user_cs_inp', 'agent_cs_inp', 'rapp_inp', 'agent_intention_inp']
-    output_variables = ['user_cs_outp', 'rapp_outp']
-
     for k, val in data.items():
-        all_keys = list(val.keys())
-        u_true[k] = val[all_keys[0]]
-        r_true[k] = val[all_keys[1]]
+        u_true[k] = val['user_cs_outp']
+        r_true[k] = val['rapp_outp']
         n_tot[k] = u_true[k].shape[0]
-        U_full[k] = np.concatenate(( add_axis(val[all_keys[2]]), add_axis(val[all_keys[3]]) ))
-        A_full[k] = np.concatenate(( add_axis(val[all_keys[4]]), add_axis(val[all_keys[5]]) ))
-        R_full[k] = np.concatenate(( add_axis(val[all_keys[8]]), add_axis(val[all_keys[9]]) ))
-        AT_full[k] = np.concatenate((add_axis(val[all_keys[6]]), add_axis(val[all_keys[7]])))
+        U_full[k] = np.concatenate((add_axis(val['user_cs_inp_t-1']), add_axis(val['user_cs_inp_t-2'])))
+        A_full[k] = np.concatenate((add_axis(val['agent_cs_inp_t-0']), add_axis(val['agent_cs_inp_t-1'])))
+        R_full[k] = np.concatenate((add_axis(val['rapp_inp_t-1']), add_axis(val['rapp_inp_t-2'])))
+        AT_full[k] = np.concatenate((add_axis(val['agent_intention_inp_t-0']), add_axis(val['agent_intention_inp_t-1'])))
 
     return u_true, r_true, n_tot, U_full, A_full, R_full, AT_full
 
@@ -56,22 +52,9 @@ def upsample_data(u_true, r_true, R_full, U_full, A_full, AT_full, window):
     # Last index corresponds to NONE conversational strategy
     u_none = np.where(u_true[:, -1] == 1)[0]
     ns = u_none.shape[0]
-    # u_not_none = np.where(u_true[c][:, -1] == 0)[0]
-    # Sample non-NONE CSs to equal the number of samples for NONE CS
-    # u_SD = np.where(u_true[:, 0] == 1)[0]
-    # n_SD = u_SD.shape[0]
+
     # Outputs: True user CS, true rapport value
-    num_cs = u_true.shape[1]
-
-    # us_other = [np.where(u_true[:, i] == 1)[0] for i in range(num_cs - 1)]
     us_other = [np.where(u_true[:, -1] != 1)[0]]
-    # us_other = [np.where(u_true[:, 0] == 1)[0]]
-    # for i in [1, 2, 3]:
-    #     us_other.append(np.where(u_true[:, i] == 1)[0])
-
-    # u_tr_f = np.concatenate((re_sample(u_true[c][u_not_none], ns), u_true[c][u_none]))
-    # r_tr_f = np.concatenate((re_sample(r_true[c][u_not_none], ns), r_true[c][u_none]))
-
     tup = [re_sample(u_true[uo], ns) for uo in us_other]
     tup.append(u_true[u_none])
     u_tr_f = np.concatenate(tuple(tup))
@@ -85,18 +68,11 @@ def upsample_data(u_true, r_true, R_full, U_full, A_full, AT_full, window):
     tup = [re_sample(R_temp[uo, :], ns) for uo in us_other]
     tup.append(R_temp[u_none, :])
     R_f = np.concatenate(tuple(tup))
-    # R_f = np.concatenate((re_sample(R_temp[u_not_none, :], ns), R_temp[u_none, :]))
-
-    # U_temp = numpy_view(U_full[c])
-    # U_f = np.concatenate((re_sample(U_temp[u_not_none, :, :], ns), U_temp[u_none, :, :]))
 
     U_temp = numpy_view(U_full)
     tup = [re_sample(U_temp[uo, :, :], ns) for uo in us_other]
     tup.append(U_temp[u_none, :, :])
     U_f = np.concatenate(tuple(tup))
-
-    # A_temp = numpy_view(A_full[c])
-    # A_f = np.concatenate((re_sample(A_temp[u_not_none, :, :], ns), A_temp[u_none, :, :]))
 
     A_temp = numpy_view(A_full)
     tup = [re_sample(A_temp[uo, :, :], ns) for uo in us_other]
@@ -118,7 +94,6 @@ def get_train_valid_test_indices(frac_valid, frac_test, N):
     assert frac_valid < 1 and frac_test < 1 and frac_valid + frac_test < 1
     n_valid = int(frac_valid * N)
     n_test = int(frac_test * N)
-    n_train = N - (n_valid + n_test)
 
     all_indices = range(N)
     valid_indices = np.random.choice(all_indices, size=n_valid, replace=False).tolist()

@@ -6,23 +6,24 @@ from sklearn.metrics import f1_score
 
 
 class Trainer:
-    def __init__(self, je, lr, n_epochs, print_every, thresh, social=False):
+    def __init__(self, je, lr, n_epochs, print_every, thresh, model_type):
         self.je = je
         self.lr = lr
         self.n_epochs = n_epochs
         self.print_every = print_every
         self.thresh = thresh
-        self.social = social
+        self.model_type = model_type
 
-        self.loss_fn_rapp = None
-        self.loss_fn_cs = None
+        self.loss_fn = None
         self.optimizer = None
 
         self.set_losses()
 
     def set_losses(self):
-        self.loss_fn_rapp = torch.nn.MSELoss()
-        self.loss_fn_cs = torch.nn.BCELoss()
+        if self.model_type == 're':
+            self.loss_fn = torch.nn.MSELoss()
+        else:
+            self.loss_fn = torch.nn.BCELoss()
         self.optimizer = optim.Adam(self.je.parameters(), lr=self.lr, weight_decay=0)
 
     def accuracy(self, prob_pred, y_true, print_info=False):
@@ -37,9 +38,6 @@ class Trainer:
         acc = f1_score(y_true, y_pred, average='micro')
 
         if print_info:
-            # print("Predicted probability: ", prob_pred)
-            # print("True y: ", y_true)
-            # print("Predicted y: ", y_pred)
             print("True y sum: ", np.sum(y_true))
             print("Predicted y sum: ", np.sum(y_pred))
             print("True y sum col: ", np.sum(y_true, axis=0))
@@ -49,53 +47,46 @@ class Trainer:
         return y_pred, acc
 
     def train(self, u_tr, r_tr, R, U, A, AT):
-        print(R.shape)
-        print(U.shape)
-        print(A.shape)
-        print(AT.shape)
+        print("Rapport shape: ", R.shape)
+        print("User CS shape: ", U.shape)
+        print("Agent CS shape: ", A.shape)
+        print("Agent TS shape: ", AT.shape)
+
         for i in range(self.n_epochs):
             self.optimizer.zero_grad()
-            rapp_pred, cs_pred = self.je(U, A, R, AT)
-            # print(cs_pred)
-            if not self.social:
-                loss_rapp = self.loss_fn_rapp(rapp_pred, r_tr.squeeze(1))
-                # tot_loss = loss_rapp
-                loss_cs = self.loss_fn_cs(cs_pred, u_tr)
-                tot_loss = loss_rapp + loss_cs
+            output = self.je(U, A, R, AT)
+
+            if self.model_type == 're':
+                loss = self.loss_fn(output, r_tr)
             else:
-                loss_cs = self.loss_fn_cs(cs_pred, u_tr)
-                tot_loss = loss_cs
+                loss = self.loss_fn(output, u_tr)
 
-            tot_loss.backward()
+            loss.backward()
             self.optimizer.step()
-            if i % self.print_every == 0:
-                # print("Epoch: %d, Rapport loss: %.3f, CS loss: %.3f, CS prediction accuracy: %.2f" % (i, loss_rapp, loss_cs, acc*100))
-                if not self.social:
-                    # print("Epoch: %d, Total loss: %.3f" % (i, tot_loss))
-                    _, acc = self.accuracy(cs_pred.cpu().data.numpy(), u_tr.cpu().data.numpy())
-                    print("Epoch: %d, Rapport loss: %.3f, CS loss: %.3f, CS prediction accuracy: %.2f" % (i, loss_rapp, loss_cs, acc * 100))
-                    #print("Epoch: %d, Rapport loss: %.3f" % (i, tot_loss))
 
+            if i % self.print_every == 0:
+                if self.model_type == 're':
+                    print("Epoch: %d, Loss: %.3f" % (i, loss))
                 else:
-                    _, acc = self.accuracy(cs_pred.cpu().data.numpy(), u_tr.cpu().data.numpy())
-                    print("Epoch: %d, Total loss: %.3f, CS prediction accuracy: %.2f" % (i, loss_cs, acc * 100))
+                    _, acc = self.accuracy(output.cpu().data.numpy(), u_tr.cpu().data.numpy())
+                    print("Epoch: %d, Loss: %.3f" % (i, loss), end='')
+                    print("CS prediction accuracy: %.3f" % acc)
 
     def eval(self, u_tr, r_tr, R, U, A, AT):
         self.je.eval()
-        rapp_pred, cs_pred = self.je(U, A, R, AT)
-        if not self.social:
-            loss_rapp = self.loss_fn_rapp(rapp_pred, r_tr.squeeze(1))
-            loss_cs = self.loss_fn_cs(cs_pred, u_tr)
-            tot_loss = loss_rapp + loss_cs
-            _, acc = self.accuracy(cs_pred.cpu().data.numpy(), u_tr.cpu().data.numpy(), print_info=True)
-        else:
-            loss_cs = self.loss_fn_cs(cs_pred, u_tr)
-            _, acc = self.accuracy(cs_pred.cpu().data.numpy(), u_tr.cpu().data.numpy(), print_info=True)
-        print("Validation stats:")
-        if not self.social:
-            print("Rapp loss: %.3f" % (loss_rapp))
-            print("CS loss: %.3f" % (loss_cs))
-            print("Total loss: %.3f, CS prediction accuracy: %.2f" % (tot_loss, acc * 100))
-        else:
-            print("Total loss: %.3f, CS prediction accuracy: %.2f" % (loss_cs, acc * 100))
+        output = self.je(U, A, R, AT)
 
+        if self.model_type == 're':
+            loss = self.loss_fn(output, r_tr)
+        else:
+            loss = self.loss_fn(output, u_tr)
+
+        print("Validation stats:")
+        if self.model_type == 're':
+            print("Loss: %.3f" % loss)
+            return loss
+        else:
+            _, acc = self.accuracy(output.cpu().data.numpy(), u_tr.cpu().data.numpy(), print_info=True)
+            print("Loss: %.3f" % loss, end='')
+            print("CS prediction accuracy: %.3f" % acc)
+            return -1 * acc
