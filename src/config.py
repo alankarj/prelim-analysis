@@ -15,11 +15,11 @@ num_user_cs = 6
 num_agent_cs = 8
 num_agent_ts = 26
 
-testing = True
+testing = False
 c = 1
 model_type = 'sr'  # Possible values = ['re', 'sr']
-window_type = 1  # Possible values = [1, 2, 'linear_combination']
-feature_type = 'cs_only'  # Possible values = ['cs_only', 'cs + rapport', 'cs + rapport + ts']
+window_type = 2  # Possible values = [1, 2, 'linear_combination']
+feature_type = 'cs + rapport'  # Possible values = ['cs_only', 'cs + rapport', 'cs + rapport + ts']
 
 # Hyperparameters
 num_leaky_iter = 5

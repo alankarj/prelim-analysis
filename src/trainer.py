@@ -69,7 +69,7 @@ class Trainer:
                     print("Epoch: %d, Loss: %.3f" % (i, loss))
                 else:
                     _, acc = self.accuracy(output.cpu().data.numpy(), u_tr.cpu().data.numpy())
-                    print("Epoch: %d, Loss: %.3f" % (i, loss), end='')
+                    print("Epoch: %d, Loss: %.3f, " % (i, loss), end='')
                     print("CS prediction accuracy: %.3f" % acc)
 
     def eval(self, u_tr, r_tr, R, U, A, AT):
@@ -87,6 +87,6 @@ class Trainer:
             return loss
         else:
             _, acc = self.accuracy(output.cpu().data.numpy(), u_tr.cpu().data.numpy(), print_info=True)
-            print("Loss: %.3f" % loss, end='')
+            print("Loss: %.3f, " % loss, end='')
             print("CS prediction accuracy: %.3f" % acc)
             return -1 * acc

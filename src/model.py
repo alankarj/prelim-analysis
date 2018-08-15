@@ -34,16 +34,17 @@ class JointEstimator(nn.Module):
             r_input = R[:, 0][:, None]
 
         elif self.window_type == 2:
+            R = R[:, :, None]
             u_input = torch.cat([U[:, :, 0], U[:, :, 1]], dim=1)
             a_input = torch.cat([A[:, :, 0], A[:, :, 1]], dim=1)
             at_input = torch.cat([AT[:, :, 0], AT[:, :, 1]], dim=1)
-            r_input = torch.cat([R[:, :, 0], R[:, :, 1]], dim=1)
+            r_input = torch.cat([R[:, 0, :], R[:, 1, :]], dim=1)
 
         else:
             u_input = torch.matmul(U, self.alpha[None, :, :]).squeeze(-1)
             a_input = torch.matmul(A, self.beta[None, :, :]).squeeze(-1)
             at_input = torch.matmul(AT, self.gamma[None, :, :]).squeeze(-1)
-            r_input = torch.matmul(R, self.delta[None, :, :]).squeeze(-1)
+            r_input = torch.matmul(R, self.delta)
 
         if self.feature_type == 'cs_only':
             full_input = torch.cat([u_input, a_input], 1)
@@ -62,4 +63,3 @@ class JointEstimator(nn.Module):
         else:
             cs_prob = F.sigmoid(output)
             return cs_prob
-
