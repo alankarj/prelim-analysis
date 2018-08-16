@@ -15,6 +15,7 @@ num_user_cs = 6
 num_agent_cs = 8
 num_agent_ts = 26
 
+sr_type = 'user'
 testing = True
 neural = True
 c = 0
@@ -55,7 +56,10 @@ def get_output_size():
     if model_type == 're':
         output_size = 1
     else:
-        output_size = num_user_cs
+        if sr_type == 'user':
+            output_size = num_user_cs
+        else:
+            output_size = num_agent_cs
 
     return output_size
 

@@ -2,6 +2,7 @@
 import torch
 import numpy as np
 from sklearn.utils import resample
+import config
 
 
 def prepare_data(data):
@@ -19,7 +20,14 @@ def prepare_data(data):
     n_tot = {}
 
     for k, val in data.items():
-        u_true[k] = val['user_cs_outp']
+
+        if config.sr_type == 'user':
+            u_true[k] = val['user_cs_outp']
+            A_full[k] = np.concatenate((add_axis(val['agent_cs_inp_t-0']), add_axis(val['agent_cs_inp_t-1'])))
+        else:
+            u_true[k] = val['agent_cs_inp_t-0']
+            A_full[k] = np.concatenate((add_axis(val['agent_cs_inp_t-1']), add_axis(val['agent_cs_inp_t-2'])))
+
         r_true[k] = val['rapp_outp']
         n_tot[k] = u_true[k].shape[0]
         U_full[k] = np.concatenate((add_axis(val['user_cs_inp_t-1']), add_axis(val['user_cs_inp_t-2'])))
