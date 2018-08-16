@@ -15,10 +15,11 @@ num_user_cs = 6
 num_agent_cs = 8
 num_agent_ts = 26
 
-testing = False
-c = 1
+testing = True
+neural = True
+c = 0
 model_type = 'sr'  # Possible values = ['re', 'sr']
-window_type = 2  # Possible values = [1, 2, 'linear_combination']
+window_type = 'linear_combination' # Possible values = [1, 2, 'linear_combination']
 feature_type = 'cs + rapport'  # Possible values = ['cs_only', 'cs + rapport', 'cs + rapport + ts']
 
 # Hyperparameters
@@ -30,9 +31,9 @@ hidden_sizes = [8, 16]
 thresh = [0.35, 0.40, 0.45, 0.50]
 
 # Test parameters
-test_hidden_dim = 16
-test_leaky_slope = 0.1
-test_thresh = 0.4
+test_hidden_dim = 8
+test_leaky_slope = 0.10
+test_thresh = 0.35
 test_epochs = 20000
 
 

@@ -7,6 +7,10 @@ import pickle
 import data_prep
 
 from trainer import Trainer
+from sklearn.ensemble import ExtraTreesClassifier
+
+from sklearn.metrics import classification_report
+from sklearn.metrics import f1_score
 
 seed = 0
 torch.manual_seed(seed)
@@ -56,96 +60,128 @@ def main():
         config.max_window)
 
     tr_ind = train_indices[c]
-    val_ind = valid_indices[c]
 
     if config.testing:
-        eval_data_type = config.data_types[2]
+        if config.neural:
+            eval_data_type = config.data_types[2]
 
-        je, trainer = train_only(config.test_hidden_dim, config.test_leaky_slope,
-                                 config.test_thresh, config.test_epochs, train_data)
+            je, trainer = train_only(config.test_hidden_dim, config.test_leaky_slope,
+                                     config.test_thresh, config.test_epochs, train_data)
 
-        if c == 'all':
-            for i, cluster_id in enumerate(clusters[:-1]):
-                te_ind = [ind + indexing_list[i] for ind in test_indices[cluster_id]]
-                eval_data = get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type)
-                loss = eval_only(eval_data, je, trainer, save_model=False)
-                print("Loss for cluster-%d is %.3f" % (cluster_id, loss))
+            if c == 'all':
+                for i, cluster_id in enumerate(clusters[:-1]):
+                    val_ind = valid_indices[cluster_id]
+                    te_ind = [ind + indexing_list[i] for ind in test_indices[cluster_id]]
+                    eval_data = get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type)
+                    loss = eval_only(eval_data, je, trainer, save_model=False)
+                    print("Loss for cluster-%d is %.3f" % (cluster_id, loss))
 
-        te_ind = test_indices[c]
-        eval_data = get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type)
-        loss = eval_only(eval_data, je, trainer, save_model=True)
-        print("Overall loss is %.3f" % loss)
+            val_ind = valid_indices[c]
+            te_ind = test_indices[c]
+            eval_data = get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type)
+            loss = eval_only(eval_data, je, trainer, save_model=True)
+            print("Overall loss is %.3f" % loss)
+
+        else:
+            eval_data_type = config.data_types[2]
+
+            X_train, Y_train = prepare_training_data_non_nn(train_data)
+            print("Train data shape: ", X_train.shape)
+            print("Train data shape: ", Y_train.shape)
+            clf = train_only_non_nn(X_train, Y_train)
+
+            if c == 'all':
+                for i, cluster_id in enumerate(clusters[:-1]):
+                    val_ind = valid_indices[cluster_id]
+                    te_ind = [ind + indexing_list[i] for ind in test_indices[cluster_id]]
+                    eval_data = get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type)
+                    X_eval, Y_eval = prepare_training_data_non_nn(eval_data)
+                    print("Eval data shape: ", X_eval.shape)
+                    print("Eval data shape: ", Y_eval.shape)
+                    eval_only_non_nn(clf, X_eval, Y_eval, print_info=True)
+
+            val_ind = valid_indices[c]
+            te_ind = test_indices[c]
+            eval_data = get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type)
+            X_eval, Y_eval = prepare_training_data_non_nn(eval_data)
+            print("Eval data shape: ", X_eval.shape)
+            print("Eval data shape: ", Y_eval.shape)
+            eval_only_non_nn(clf, X_eval, Y_eval, print_info=True)
 
     else:
         te_ind = test_indices[c]
         eval_data_type = config.data_types[1]
         eval_data = get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type)
 
-        if config.model_type == 're':
-            loss = float("inf")
-
-            thresh = 0.4
-            best_leaky_slope = None
-            best_hidden_dim = None
-
-            for leaky_iter in range(config.num_leaky_iter):
-                leaky_slope = config.leaky_min + leaky_iter * config.leaky_step
-                for hidden_dim in config.hidden_sizes:
-                    print("###########################################################")
-                    print("Leaky slope: %.2f, Hidden dim: %d" % (leaky_slope, hidden_dim))
-                    print("###########################################################")
-
-                    seed = 0
-                    torch.manual_seed(seed)
-                    np.random.seed(seed)
-                    random.seed(seed)
-
-                    temp_loss = train_and_evaluate(hidden_dim, leaky_slope, thresh, n_epochs, train_data, eval_data)
-
-                    loss = min(loss, temp_loss)
-                    if loss == temp_loss:
-                        best_leaky_slope = leaky_slope
-                        best_hidden_dim = hidden_dim
-
-            print("###########################################################")
-            print("Best loss: %.3f, best leaky slope: %.2f, best hidden dim: %d" % (
-                loss, best_leaky_slope, best_hidden_dim))
+        if not config.neural:
+            train_and_evaluate_non_nn(train_data, eval_data)
 
         else:
-            loss = float("inf")
+            if config.model_type == 're':
+                loss = float("inf")
 
-            best_n_epochs = None
-            best_thresh = None
-            best_leaky_slope = None
-            best_hidden_dim = None
+                thresh = 0.4
+                best_leaky_slope = None
+                best_hidden_dim = None
 
-            for n_epochs in config.n_epochs:
-                for thresh in config.thresh:
-                    for leaky_iter in range(config.num_leaky_iter):
-                        leaky_slope = config.leaky_min + leaky_iter * config.leaky_step
-                        for hidden_dim in config.hidden_sizes:
-                            print("###########################################################")
-                            print("Num epochs: %d, Threshold: %.2f, Leaky slope: %.2f, Hidden dim: %d" %
-                                  (n_epochs, thresh, leaky_slope, hidden_dim))
-                            print("###########################################################")
+                for leaky_iter in range(config.num_leaky_iter):
+                    leaky_slope = config.leaky_min + leaky_iter * config.leaky_step
+                    for hidden_dim in config.hidden_sizes:
+                        print("###########################################################")
+                        print("Leaky slope: %.2f, Hidden dim: %d" % (leaky_slope, hidden_dim))
+                        print("###########################################################")
 
-                            seed = 0
-                            torch.manual_seed(seed)
-                            np.random.seed(seed)
-                            random.seed(seed)
+                        seed = 0
+                        torch.manual_seed(seed)
+                        np.random.seed(seed)
+                        random.seed(seed)
 
-                            temp_loss = train_and_evaluate(hidden_dim, leaky_slope, thresh, n_epochs, train_data, eval_data)
+                        temp_loss = train_and_evaluate(hidden_dim, leaky_slope, thresh, n_epochs, train_data, eval_data)
 
-                            loss = min(loss, temp_loss)
-                            if loss == temp_loss:
-                                best_leaky_slope = leaky_slope
-                                best_hidden_dim = hidden_dim
-                                best_n_epochs = n_epochs
-                                best_thresh = thresh
+                        loss = min(loss, temp_loss)
+                        if loss == temp_loss:
+                            best_leaky_slope = leaky_slope
+                            best_hidden_dim = hidden_dim
 
-            print("###########################################################")
-            print("Best loss: %.3f, best n_epochs: %d, best thresh: %.2f, best leaky slope: %.2f, best hidden dim: %d" % (
-                loss, best_n_epochs, best_thresh, best_leaky_slope, best_hidden_dim))
+                print("###########################################################")
+                print("Best loss: %.3f, best leaky slope: %.2f, best hidden dim: %d" % (
+                    loss, best_leaky_slope, best_hidden_dim))
+
+            else:
+                loss = float("inf")
+
+                best_n_epochs = None
+                best_thresh = None
+                best_leaky_slope = None
+                best_hidden_dim = None
+
+                for n_epochs in config.n_epochs:
+                    for thresh in config.thresh:
+                        for leaky_iter in range(config.num_leaky_iter):
+                            leaky_slope = config.leaky_min + leaky_iter * config.leaky_step
+                            for hidden_dim in config.hidden_sizes:
+                                print("###########################################################")
+                                print("Num epochs: %d, Threshold: %.2f, Leaky slope: %.2f, Hidden dim: %d" %
+                                      (n_epochs, thresh, leaky_slope, hidden_dim))
+                                print("###########################################################")
+
+                                seed = 0
+                                torch.manual_seed(seed)
+                                np.random.seed(seed)
+                                random.seed(seed)
+
+                                temp_loss = train_and_evaluate(hidden_dim, leaky_slope, thresh, n_epochs, train_data, eval_data)
+
+                                loss = min(loss, temp_loss)
+                                if loss == temp_loss:
+                                    best_leaky_slope = leaky_slope
+                                    best_hidden_dim = hidden_dim
+                                    best_n_epochs = n_epochs
+                                    best_thresh = thresh
+
+                print("###########################################################")
+                print("Best loss: %.3f, best n_epochs: %d, best thresh: %.2f, best leaky slope: %.2f, best hidden dim: %d" % (
+                    loss, best_n_epochs, best_thresh, best_leaky_slope, best_hidden_dim))
 
 
 def train_and_evaluate(hidden_dim, leaky_slope, thresh, n_epochs, train_data, eval_data, save_model=False):
@@ -181,6 +217,76 @@ def eval_only(eval_data, je, trainer, save_model=False):
     if save_model:
         torch.save(je.state_dict(), 'weights_' + str(config.c) + '.t7')
     return temp_loss
+
+
+def train_and_evaluate_non_nn(train_data, eval_data):
+    X_train, Y_train = prepare_training_data_non_nn(train_data)
+    X_eval, Y_eval = prepare_training_data_non_nn(eval_data)
+    print("Train data shape: ", X_train.shape)
+    print("Train data shape: ", Y_train.shape)
+    print("Eval data shape: ", X_eval.shape)
+    print("Eval data shape: ", Y_eval.shape)
+    clf = train_only_non_nn(X_train, Y_train)
+    acc = eval_only_non_nn(clf, X_eval, Y_eval, print_info=True)
+    return acc
+
+
+def prepare_training_data_non_nn(train_data):
+    u_tr, r_tr, R, U, A, AT = train_data
+
+    if config.window_type == 1:
+        u_input = U[:, :, 0]
+        a_input = A[:, :, 0]
+        at_input = AT[:, :, 0]
+        r_input = R[:, 0][:, None]
+
+    elif config.window_type == 2:
+        R = R[:, :, None]
+        u_input = torch.cat([U[:, :, 0], U[:, :, 1]], dim=1)
+        a_input = torch.cat([A[:, :, 0], A[:, :, 1]], dim=1)
+        at_input = torch.cat([AT[:, :, 0], AT[:, :, 1]], dim=1)
+        r_input = torch.cat([R[:, 0, :], R[:, 1, :]], dim=1)
+
+    if config.feature_type == 'cs_only':
+        full_input = torch.cat([u_input, a_input], 1)
+
+    elif config.feature_type == 'cs + rapport':
+        full_input = torch.cat([u_input, a_input, r_input], 1)
+
+    else:
+        full_input = torch.cat([u_input, a_input, at_input, r_input], 1)
+
+    if config.model_type == 're':
+        output = r_tr
+    else:
+        output = u_tr
+
+    X = full_input.cpu().data.numpy()
+    Y = output.cpu().data.numpy()
+
+    return X, Y
+
+
+def train_only_non_nn(X, Y):
+    clf = ExtraTreesClassifier(random_state=0, n_estimators=63)
+    clf.fit(X, Y)
+    return clf
+
+
+def eval_only_non_nn(clf, X, Y, print_info=False):
+    Y_pred = clf.predict(X)
+    acc = f1_score(Y, Y_pred, average='micro')
+
+    if print_info:
+        print("True y sum: ", np.sum(Y))
+        print("Predicted y sum: ", np.sum(Y_pred))
+        print("True y sum col: ", np.sum(Y, axis=0))
+        print("Predicted y sum col: ", np.sum(Y_pred, axis=0))
+        conf_mat = classification_report(Y, Y_pred)
+        print("Confusion matrix: ", conf_mat)
+        print("Accuracy: ", acc)
+
+    return acc
 
 
 if __name__ == '__main__':
