@@ -18,10 +18,10 @@ num_agent_ts = 26
 sr_type = 'user'
 testing = True
 neural = True
-c = 0
-model_type = 'sr'  # Possible values = ['re', 'sr']
-window_type = 'linear_combination' # Possible values = [1, 2, 'linear_combination']
-feature_type = 'cs + rapport'  # Possible values = ['cs_only', 'cs + rapport', 'cs + rapport + ts']
+c = 'all'
+model_type = 're'  # Possible values = ['re', 'sr']
+window_type = 1  # Possible values = [1, 2, 'linear_combination']
+feature_type = 'cs + rapport + ts'  # Possible values = ['cs_only', 'cs + rapport', 'cs + rapport + ts']
 
 # Hyperparameters
 num_leaky_iter = 5
@@ -33,7 +33,7 @@ thresh = [0.35, 0.40, 0.45, 0.50]
 
 # Test parameters
 test_hidden_dim = 8
-test_leaky_slope = 0.10
+test_leaky_slope = 0.05
 test_thresh = 0.35
 test_epochs = 20000
 

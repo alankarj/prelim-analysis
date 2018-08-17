@@ -109,6 +109,7 @@ def main():
             eval_only_non_nn(clf, X_eval, Y_eval, print_info=True)
 
     else:
+        val_ind = valid_indices[c]
         te_ind = test_indices[c]
         eval_data_type = config.data_types[1]
         eval_data = get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type)
@@ -136,7 +137,7 @@ def main():
                         np.random.seed(seed)
                         random.seed(seed)
 
-                        temp_loss = train_and_evaluate(hidden_dim, leaky_slope, thresh, n_epochs, train_data, eval_data)
+                        temp_loss = train_and_evaluate(hidden_dim, leaky_slope, thresh, config.n_epochs[-1], train_data, eval_data)
 
                         loss = min(loss, temp_loss)
                         if loss == temp_loss:
