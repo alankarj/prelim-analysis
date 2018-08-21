@@ -3,7 +3,7 @@ import os
 ALL_STR = 'all'
 
 parent_path = os.path.abspath('../')
-data_path = parent_path + '/data/davos/'
+data_path = parent_path + '/data/davos/train_data/'
 train_data_fname = 'train_data_full.pkl'
 train_indices_fname = 'train_indices.pkl'
 valid_indices_fname = 'valid_indices.pkl'
@@ -20,9 +20,9 @@ num_agent_cs = 8
 num_agent_ts = 26
 
 sr_type = 'user'
-testing = True
+testing = False
 neural = True
-c = 0
+c = 'all'
 model_type = 'sr'  # Possible values = ['re', 'sr']
 window_type = 1  # Possible values = [1, 2, 'linear_combination']
 feature_type = 'cs + rapport + ts'  # Possible values = ['cs_only', 'cs + rapport', 'cs + rapport + ts']

@@ -40,8 +40,11 @@ def main():
     # Get data for the given cluster
     new_data = data_prep.prep_data(u_true[c], r_true[c], R_full[c], U_full[c], A_full[c], AT_full[c])
 
-    train_data = pickle.load(open(config.data_path + config.train_data_resampled_fname
-                                  + str(config.c) + '.pkl', 'rb'))
+    if config.sr_type == 'user':
+        train_fname = config.train_data_resampled_fname + str(config.c) + '.pkl'
+    else:
+        train_fname = config.train_data_resampled_fname + 'agent' + '.pkl'
+    train_data = pickle.load(open(config.data_path + train_fname, 'rb'))
 
     tr_ind = train_indices[c]
 
