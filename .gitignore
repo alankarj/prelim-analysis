@@ -106,7 +106,9 @@ ENV/
 .idea/codeStyles/codeStyleConfig.xml
 .idea/vcs.xml
 .idea/
-data/
+
+/data/.DS_Store
+
 src/.DS_Store
 src/weights_0.t7
 src/weights_1.t7
