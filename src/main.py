@@ -26,38 +26,22 @@ def main():
     clusters = list(n_tot.keys())
     c = config.c
 
-    train_indices = {}
-    valid_indices = {}
-    test_indices = {}
-
-    train_indices[config.ALL_STR] = []
-    valid_indices[config.ALL_STR] = []
-    test_indices[config.ALL_STR] = []
+    # Train indices, validation indices, test indices
+    train_indices = pickle.load(open(config.data_path + config.train_indices_fname, 'rb'))
+    valid_indices = pickle.load(open(config.data_path + config.valid_indices_fname, 'rb'))
+    test_indices = pickle.load(open(config.data_path + config.test_indices_fname, 'rb'))
 
     indexing_list = [0]
 
-    # Create training, validation and test sets for all clusters. 'all' is everything combined.
     for i, cluster_id in enumerate(clusters[:-1]):
-        num_samples = u_true[cluster_id].shape[0]
+        num_samples = len(train_indices[cluster_id]) + len(valid_indices[cluster_id]) + len(test_indices[cluster_id])
         indexing_list.append(num_samples)
-        train_indices[cluster_id], valid_indices[cluster_id], test_indices[cluster_id] = data_prep.get_train_valid_test_indices(config.frac_valid, config.frac_test, num_samples)
-
-        train_indices[config.ALL_STR] += [ind + indexing_list[i] for ind in train_indices[cluster_id]]
-        valid_indices[config.ALL_STR] += [ind + indexing_list[i] for ind in valid_indices[cluster_id]]
-        test_indices[config.ALL_STR] += [ind + indexing_list[i] for ind in test_indices[cluster_id]]
 
     # Get data for the given cluster
     new_data = data_prep.prep_data(u_true[c], r_true[c], R_full[c], U_full[c], A_full[c], AT_full[c])
 
-    # Resample the data
-    train_data = data_prep.upsample_data(
-        u_true[c][train_indices[c]],
-        r_true[c][train_indices[c]],
-        R_full[c][:, train_indices[c], :],
-        U_full[c][:, train_indices[c], :],
-        A_full[c][:, train_indices[c], :],
-        AT_full[c][:, train_indices[c], :],
-        config.max_window)
+    train_data = pickle.load(open(config.data_path + config.train_data_resampled_fname
+                                  + str(config.c) + '.pkl', 'rb'))
 
     tr_ind = train_indices[c]
 
@@ -66,12 +50,13 @@ def main():
             eval_data_type = config.data_types[2]
 
             je, trainer, _, _ = train_only(config.test_hidden_dim, config.test_leaky_slope,
-                                     config.test_thresh, config.test_epochs, train_data)
+                                           config.test_thresh, config.test_epochs, train_data)
 
             if c == 'all':
                 for i, cluster_id in enumerate(clusters[:-1]):
-                    val_ind = valid_indices[cluster_id]
+                    val_ind = [ind + indexing_list[i] for ind in valid_indices[cluster_id]]
                     te_ind = [ind + indexing_list[i] for ind in test_indices[cluster_id]]
+
                     eval_data = get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type)
                     loss = eval_only(eval_data, je, trainer, save_model=False)
                     print("Loss for cluster-%d is %.3f" % (cluster_id, loss))

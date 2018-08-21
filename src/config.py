@@ -5,6 +5,10 @@ ALL_STR = 'all'
 parent_path = os.path.abspath('../')
 data_path = parent_path + '/data/davos/'
 train_data_fname = 'train_data_full.pkl'
+train_indices_fname = 'train_indices.pkl'
+valid_indices_fname = 'valid_indices.pkl'
+test_indices_fname = 'test_indices.pkl'
+train_data_resampled_fname = 'train_data_resampled_'
 frac_valid = 0.1
 frac_test = 0.1
 lr = 1e-3
@@ -16,12 +20,12 @@ num_agent_cs = 8
 num_agent_ts = 26
 
 sr_type = 'user'
-testing = False
+testing = True
 neural = True
-c = 'all'
-model_type = 're'  # Possible values = ['re', 'sr']
-window_type = 'linear_combination'  # Possible values = [1, 2, 'linear_combination']
-feature_type = 'cs + rapport'  # Possible values = ['cs_only', 'cs + rapport', 'cs + rapport + ts']
+c = 0
+model_type = 'sr'  # Possible values = ['re', 'sr']
+window_type = 1  # Possible values = [1, 2, 'linear_combination']
+feature_type = 'cs + rapport + ts'  # Possible values = ['cs_only', 'cs + rapport', 'cs + rapport + ts']
 
 # Hyperparameters
 num_leaky_iter = 5
@@ -32,10 +36,10 @@ hidden_sizes = [8, 16]
 thresh = [0.35, 0.40, 0.45, 0.50]
 
 # Test parameters
-test_hidden_dim = 8
-test_leaky_slope = 0.05
+test_hidden_dim = 16
+test_leaky_slope = 0.15
 test_thresh = 0.35
-test_epochs = 3876
+test_epochs = 1597
 
 
 def get_input_size():

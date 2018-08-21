@@ -36,7 +36,7 @@ class Trainer:
         y_pred = prob_pred.copy()
         y_pred[prob_pred >= self.thresh] = 1
         y_pred[prob_pred < self.thresh] = 0
-        acc = f1_score(y_true[:, :-1], y_pred[:, :-1], average='micro')
+        acc = f1_score(y_true, y_pred, average='micro')
 
         if print_info:
             print("True y sum: ", np.sum(y_true))
