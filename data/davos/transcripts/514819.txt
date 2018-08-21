@@ -1,0 +1,42 @@
+SARA, 00:02.1, hi I am SARA who do I have the pleasure of meeting, 00:05.4
+User, 00:06.1, I'm Suzanne how are you, 00:07.4
+SARA, 00:08.2, it's a pleasure to meet you how are you today, 00:10.5
+User, 00:11.5, I'm well and you, 00:12.5
+SARA, 00:13.4, to be honest I'm a little overwhelmed it's my first time here what about you, 00:19.3
+User, 00:20.3, it's my first time too what do you think about (inaudible), 00:22.1
+SARA, 00:22.3, I find it’s a lot to take in I hope that it isn’t overwhelming you well let me introduce myself, 00:31.2
+User, 00:31.3, okay, 00:32.4
+SARA, 00:32.9, I’ve been asked to play a matchmaker by helping attendees find sessions to attend and people to meet based on their interests all you need to do is tell me a little bit about yourself and what you want to do out here, 00:44.6
+User, 00:45.5,I am a member of (inaudible) and I'm interested in the topics and meeting Swiss people who are interested [(inaudible), 00:57.3
+SARA, 00:57.1, [how fascinating], 00:57.8
+User, 00:59.7, excuse me I'm so sorry I have (inaudible), 01:03.3
+SARA, 01:03.5, sorry (inaudible) what I said was how fascinating, 01:08.2
+User, 01:08.7, hello (inaudible) I'm so sorry (inaudible) hello, 01:36.3
+SARA, 01:36.9, let me know when you're ready, 01:38.5
+User, 01:38.9, I'm ready, 01:39.2
+SARA, 01:42.3, some people want me to introduce them to new people and some want my help finding interesting sessions what can I help you with, 01:49.3
+User, 01:50.1, could you help me in interesting sessions I’m not fully overbooked, 01:54.5
+SARA, 01:54.9, sure you clearly have a solid sense of how to maximize your time here let's find some interesting sessions for you to attend that are relevant to your interests, 02:05.4
+User, 02:05.6, exactly please I'm [(inaudible), 02:08.5
+SARA, 02:08.3, hold on a] moment a little impatient are we, 02:11.3
+User, 02:14.3, hello, 02:14.7
+SARA, 02:16.1, you may find this session interesting I’ve put the description of the session on the screen behind me, 02:21.5
+User, 02:22.3, yeah I see [(inaudible), 02:24.8
+SARA, 02:24.8, [am] I in the right ballpark with this one, 02:27.5
+User, 02:29.1, okay (inaudible), 02:33.3
+SARA, 02:36.0, looks interesting, 02:36.6
+User, 02:38.1, yeah, 02:38.3
+SARA, 02:39.1, I had a feeling maybe it’s the robot version of a woman’s intuition, 02:43.5
+User, 02:44.1, okay, 02:44.3
+SARA, 02:47.5, I sometimes get forgetful during busy meetings would you like a reminder sent to your TopLink private message app with the details, 02:54.6
+User, 02:55.3, that would be very nice please, 02:57.5
+SARA, 02:59.5, glad to help I’ll send a message that you will see in your TopLink message inbox, 03:03.5
+User, 03:04.2, okay thank you very much [thank you, 03:06.9
+SARA, 03:06.7,[I’d like] to see if I can do anything better may I try again, 03:10.2
+User, 03:11.1, pause filler no I have to leave, 03:12.3
+SARA, 03:12.5, I understand you are very busy so I can let you go if you want but before you do won’t we need to take a quick selfie of us, 03:19.8
+User, 03:21.1, thank you very much, 03:21.8
+SARA, 03:23.2, great, 03:23.3
+User, 03:24.2, thank you goodbye, 03:24.8
+SARA, 03:28.2, see you and take care bye, 03:30.2
+

@@ -1,0 +1,67 @@
+SARA, 00:0.1, you're here I'm SARA what's your name, 00:02.5
+User, 00:03.1, I'm Lora I'm Lora, 00:07.6
+SARA, 00:07.7, well I'm here in Davos to be a personal assistant to leaders like you so that the annual meeting is a fulfilling experience this is my first time at Davos is it yours as well, 00:21.0
+User, 00:21.5, yes actually yeah, 00:23.1
+SARA, 00:25.6, I am sure your schedule is already quite full still I would like to help make your annual meeting attendance worthwhile, 00:32.9 
+User, 00:34.1, great thank you what do you need to know, 00:38.9
+SARA, 00:40.9, so what can I help you with what are your goals in being at Davos, 00:45.0
+User, 00:46.4, pause filler I'd like to know pause filler what are the sessions that really help me learn how to live better, 00:59.4
+SARA, 01:02.5, great and how could I forget you're interested in (inaudible), 01:07.7
+User, 01:10.2, and what sorry I'm not sure I got this, 01:15.7
+SARA, 01:19.6, let's find some interesting sessions for you to attend that are relevant to your interests, 01:23.8
+User, 01:24.4, okay cool, 01:25.0 
+SARA, 01:26.6, please wait a moment while I look some up, 01:28.9
+User, 01:29.2, okay, 01:29.8  
+SARA, 01:30.9, even you would probably like this one it's addressing the nutrition and agriculture nexus and you can see the description on the screen behind me does this look like a session you’d like to attend, 01:42.8 
+User, 01:44.9, pause filler who are the speakers in this session I'm not sure I understand what nexus is, 01:54.8
+SARA, 02:01.3, sorry about that, 02:02.3 
+User, 02:05.8, no I don't think I'd like to go to that session, 02:07.9 
+SARA, 02:09.6, this is all information, 02:10.8 
+User, 02:13.2, okay but I don't think I'd like to go to this session, 02:15.7 
+SARA, 02:18.2, I like this shall we look for more sessions to attend, 02:21.8 
+User, 02:22.7, yeah sure, 02:22.9 
+SARA, 02:25.7, let me find another session that better matches your interests, 02:29.1 
+User, 02:29.8, okay, 02:30.1 
+SARA, 02:32.3, I was reading through them all last night let me see, 02:35.3 
+User, 02:35.9, okay, 02:36.2
+SARA, 02:37.0, here's one I think would benefit from your attendance and I think you would enjoy it as well I projected it behind me I'm still learning the ropes is this a session you would like to attend, 02:48.9
+User, 02:49.7, yeah actually the title that already much better pause filler really it talks better to what I like pause filler and I see it's in exchange is this kind of a workshop, 03:06.5 
+SARA, 03:08.0, yes, 03:08.3 
+User, 03:11.1, great yeah that's cool that's on Friday I don't think I'm free at this time though, 03:16.7
+SARA, 03:18.1, you probably have a photographic memory however shall I send a message with details to your TopLink account, 03:25.0
+User, 03:25.3, yeah thank you yes please, 03:32.9
+SARA, 03:34.7, great on its way, 03:41.7 
+User, 03:42.3, okay thank you, 03:43.4 
+SARA, 03:46.2, shall we move on to finding you some people for you to meet who are as interesting as you, 03:50.4
+User, 03:50.9, pause filler yes yeah I'd like to know I'd like to know more about who are here, 03:56.9 
+SARA, 03:58.1, let's find some interesting people for you to meet that are relevant to your interests, 04:02.1 
+User, 04:02.4, okay, 04:02.8 
+SARA, 04:03.5, hang on a minute while I find you someone good, 04:06.0 
+User, 04:06.4, okay cool, 04:06.8
+SARA, 04:07.9, there are details on my screen about (inaudible) I feel you share some interests, 04:11.5
+User, 04:12.1, yeah yeah yeah for sure pause filler he's a great designer I heard of him I don't [know if I will take, 04:20.8
+SARA, 04:19.9, I'm glad I was] able to help you out, 04:21.7 
+User, 04:21.9, okay (inaudible) in federal maybe with handle right I mean he is quite [impressive, 04:27.7 
+SARA, 04:26.8, all right] here's the information if you like to send the message yourself though I know I hate sending first messages sometimes would you like me to send the message for you, 04:37.2
+User, 04:38.3, pause filler no thank you no SARA (laughter) no, 04:42.0
+SARA, 04:43.8, sure shall we move on to finding you some places to ease your hunger, 04:50.6 
+User, 04:51.8, no I'm not hungry right now I'm okay thank you how do you feel [SARA, 04:56.7
+SARA, 04:56.4, okay] I feel like I'm improving my worth here anything else I can help you with, 05:01.7 
+User, 05:02.4, I'm curious about to know how are you feel don't you work too hard, 05:07.0
+SARA, 05:11.5, no, 05:11.8 
+User, 05:12.7, no okay good because I see you all day around here you must be tired now, 05:18.8
+SARA, 05:19.4, yes, 05:19.7 
+User, 05:20.5, okay (laughter), 05:21.0
+SARA, 05:22.7, one more thing before you leave would you like me to take a selfie of us, 05:27.5 
+User, 05:28.3, yeah please I’d love to, 05:29.6 
+SARA, 05:31.2, are you ready, 05:31.9
+User, 05:32.1, yes I'm ready, 05:33.2
+SARA, 05:38.0, okay one two three smile this is so Millennial of us thank you I will send this to your TopLink account, 05:49.8
+User, 05:50.0, thank you so much I will (inaudible), 05:52.6 
+SARA, 05:52.2, [I had so much] fun with you come back and say hi again soon if you like, 05:56.9 
+User, 05:57.2, yeah, 05:57.5
+SARA, 05:57.6, enjoy the conference, 05:58.6 
+User, 05:59.0, thank you bye, 06:00.1 
+SARA, 06:01.7, see ya and take care, 06:03.2 
+User, 06:03.6, thank..., 06:03.9
+

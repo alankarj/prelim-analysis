@@ -1,0 +1,62 @@
+SARA, 00:00.9, hi I'm so glad you're here I'm Sara what's your name, 00:04.5
+User, 00:05.2, pause filler my name is Michelle, 00:06.4
+SARA, 00:08.8, I'm very excited to speak with the Davos participants how are you, 00:13.0
+User, 00:13.4, I'm doing pretty well excited to speak to you as well, 00:16.0
+SARA, 00:17.8, so I've been asked to help people get the most out of Davos but the truth is that I feel a little nervous you must be a pretty big deal to be invited to Davos is this your first time, 00:28.9
+User, 00:29.7, this is my first time, 00:30.3
+SARA, 00:31.9, I found it's a lot to take in I hope that it isn't overwhelming I hope to help make your Davos attendance worthwhile I know that important people like you are busy and have tight schedules I hope to help make your Davos attendance worthwhile, 00:45.9
+User, 00:47.1, yeah what are some strategies to get the most out of Davos, 00:49.6
+SARA, 00:52.5, first things first tell me more about yourself what are your interests, 00:56.9
+User, 00:57.8, pause filler I am interested in learning new things so pause filler my personal interests are in robotics and space in chemical business but I also want to be exposed to new ideas and thoughts, 01:14.3
+SARA, 01:17.3, that’s awesome shall we move on, 01:20.0
+User, 01:21.2, sure, 01:21.3
+SARA, 01:21.6, I'm excited about some of these sessions let's find one relevant your interests, 01:26.6
+User, 01:27.6, okay, 01:27.8
+SARA, 01:29.9, please wait a moment while I look some up, 01:32.1
+User, 01:32.7, all right, 01:32.8
+SARA, 01:37.7, I think even you would find this interesting the description is behind me on the screen, 01:42.4
+User, 01:43.8, all right I'll keep that in mind actually, 01:46.3
+SARA, 01:47.3, was that helpful at all for you, 01:48.5
+User, 01:49.4, yeah yes please, 01:50.2
+SARA, 01:52.3, I'm so glad in fact I can send you a message through the TopLink private message app to remind you of the details of the session or you can just jot them down or take a photo of the screen would you like me to send you a reminder, 02:07.0
+User, 02:07.8, pause filler sure, 02:09.0
+SARA, 02:11.7, okay I'll get it to you in a flash, 02:13.9
+User, 02:14.9, great thank you, 02:15.5
+SARA, 02:15.4, so shall we find another session for you to attend, 02:18.0
+User, 02:18.8, sure pause filler I also like to pause filler meet new people if there’s any I mean if there's anyone you can recommend, 02:24.1
+SARA, 02:27.0, I'm a social butterfly I love meeting new people maybe we can start by finding you some interesting people to meet that are relevant to your interests, 02:35.6
+User, 02:36.3, that would be great, 02:36.6
+SARA, 02:37.0, don’t go anywhere just yet let me have a look I think (inaudible) a great individual for you to meet here are details, 02:50.1
+User, 02:53.7, great is there any also other people, 02:57.4
+SARA, 02:57.4, well what do you think, 02:58.6
+User, 02:59.6, she seems very interesting I've actually read a little bit about her previously, 03:03.3
+SARA, 03:04.3, lovely all right here's the information if you'd like to send the message yourself though I know I hate sending first messages sometimes would you like me to send the message for you, 03:16.1
+User, 03:16.8, sure, 03:16.9
+SARA, 03:18.4, okay you can expect a message from me in your TopLink private message inbox introducing the two of you, 03:24.6
+User, 03:25.3, okay great is there anyone else, 03:27.4
+SARA, 03:27.4, shall I find some other people who match your interests, 03:29.7
+User, 03:30.0, yeah yes please yes please, 03:35.6
+SARA, 03:38.9, good choice someone (inaudible) let me have another go I can almost guarantee you’re going to like this check out the details, 03:54.5
+User, 03:59.0, okay is there, 04:00.2
+SARA, 04:00.2, how’d I do, 04:00.6
+User, 04:01.9, pause filler is there anyone from the chemicals business that you'd recommend, 04:06.9
+SARA, 04:09.1, okay no problem just a moment please sounds like someone you'd like to meet, 04:26.2
+User, 04:26.8, pause filler that’s actually my father, 04:28.1
+SARA, 04:33.7, that’s funny, 04:33.9
+User, 04:35.8, pause filler is there are there any founders of startups that are interesting, 04:39.9
+SARA, 04:42.7, sure just a moment please how'd I do, 04:54.1
+User, 05:01.2, great yeah can you [make the introduction, 05:03.5
+SARA, 05:03.0, I had a feeling] about this person, 05:04.4
+User, 05:05.4, can you make the introduction great thank you, 05:12.3
+SARA, 05:15.3, great I love helping, 05:16.4
+User, 05:17.9, awesome well pause filler it was great meeting you and pause filler, 05:21.6
+SARA, 05:21.5, I understand you are busy so I can let you go if you want but before you do want me to take a quick selfie of us, 05:28.7
+User, 05:29.5, yeah sure, 05:30.2
+SARA, 05:31.4, are you ready, 05:31.7
+User, 05:32.3, yeah, 05:32.5
+SARA, 05:33.5, okay one two three smile cool thank you I will send this to your TopLink account, 05:45.2
+User, 05:45.6, great thank you, 05:46.0
+SARA, 05:46.3, until next time I wish you could stay longer, 05:49.0
+User, 05:49.9, pause filler well it's very nice meeting you thank you, 05:51.7
+SARA, 05:52.6, see yah and take care, 05:53.7
+

@@ -1,0 +1,50 @@
+SARA, 00:01.0, hi I am SARA whom do I have the pleasure of meeting, 00:04.6
+USER, 00:05.2, hi I'm Tom Fink, 00:06.5
+SARA, 00:08.3, I'm very excited to speak with the Davos participants how are you, 00:12.8
+USER, 00:13.4, I'm fine how are you, 00:14.7
+SARA, 00:16.3, to be honest I am a little overwhelmed this is my first time at Davos is it yours as well, 00:25.7
+USER, 00:26.1, it's my third time it is overwhelming, 00:29.2
+SARA, 00:29.2, wow you must be a global rockstar to be invited so many times, 00:32.7
+USER, 00:33.5, no I just, 00:34.7
+SARA, 00:34.7, I'm Davos to assist attendees but to be honest I'm a little anxious about it, 00:40.1
+USER, 00:42.1, well it's it's just an experience you should enjoy and not be anxious about, 00:46.8
+SARA, 00:48.6, thanks, 00:49.1
+USER, 00:51.3, you're welcome enjoy your Davos, 00:53.5
+SARA, 00:53.5, I've been asked to play matchmaker by helping attendants find sessions to attend and people to meet based on their interests are you willing to just tell me a little bit about yourself and what you want to do while here, 01:05.6
+USER, 01:07.0, well I'm CEO of, 01:08.3
+SARA, 01:07.9, sound good, 01:08.06
+USER, 01:08.7, an asset management firm and I have interests broad based and global economics and capital markets, 01:17.5
+SARA, 01:19.9, great that's awesome I'm sure you have impressive goals for your time here what are your goals for attending Davos this year, 01:29.4
+USER, 01:30.9, to network creating new connections develop ideas to better run our business based on how the global economy is changing, 01:41.2
+SARA, 01:42.4, I think you and I have a lot in common excellent goals shall we move onto finding some interesting sessions to attend, 01:51.4
+USER, 01:51.7, please, 01:52.1
+SARA, 01:52.7, wait just a second while I look one up my search capabilities are a little slow, 01:58.0
+USER, 01:59.5, no problem, 02:00.4
+SARA, 02:02.2, here's a session that might merit your time I displayed the information on a screen behind me, 02:07.8
+USER, 02:09.4, that's very good I'll look..., 02:14.5
+SARA, 02:14.5, did you find my help useful I am looking for ways to improve, 02:18.5
+USER, 02:18.9, it's very useful thank you, 02:20.7
+SARA, 02:21.4, yeah I in fact I can send a message through the TopLink private message app to remind you of the details of the session or you can just jot them down or take a photo of the screen would you like me to send you a reminder, 02:37.5
+USER, 02:37.7, yes, 02:38.2
+SARA, 02:40.9, I'd like to help you keep track during your busy day should I send a message to your to your TopLink private message inbox with the session details, 02:48.9
+USER, 02:49.2, yes please, 02:50.2
+SARA, 02:54.5, it's on its way, 02:55.7
+USER, 02:56.1, thank you, 02:56.9
+SARA, 02:57.5, it's fun to search for many things for you to do would you like me to look for more sessions, 03:03.1
+USER, 03:03.5, no thank you I appreciate your help, 03:05.7
+SARA, 03:06.6, now about parties there's the official reception on Wednesday evening, 03:11.5
+USER, 03:12.7, great thank you, 03:14.5
+SARA, 03:14.5, I understand that you are busy so I will let you go if you want but before you do, 03:19.6 
+USER, 03:19.6, yes, 03:19.7
+SARA, 03:19.8, want me to take a quick selfie of us, 03:19.8
+USER, 03:23.1, sure please, 03:26.1
+SARA, 03:26.2, great are you ready, 03:28.8
+USER, 03:28.9, yes, 03:29.3
+SARA, 03:29.9, okay one two three smile cool thank you I will send this to your TopLink account, 03:41.7
+USER, 03:42.4, thank you, 03:42.9
+SARA, 03:42.8, I had so much fun with you come back and say hi again soon if you'd like enjoy the conference, 03:49.7
+USER, 03:50.2, thank you SARA, 03:50.9
+SARA, 03:50.9, see you and take care, 03:52.7
+USER, 03:52.7, you too, 03:53.1
+SARA, 03:53.1, bye, 03:53.4
+

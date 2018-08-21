@@ -1,0 +1,57 @@
+SARA, 00:01.0, hi I'm so glad you're here I am SARA what's your name, 00:05.2
+User, 00:05.6, my name is Ali (sfx), 00:06.4
+SARA, 00:07.9, I'm very excited to speak with the Davos participants how are you, 00:12.1
+User, 00:12.6, I'm good how are you, 00:13.9
+SARA, 00:15.8, truthfully I'm a bit tired even robots get jetlag so I'm here in Davos to be your personal assistant and help you to get the most out of the work experience, 00:27.1
+User, 00:27.3, mhm okay, 00:28.0
+SARA, 00:28.1, this is my first time at Davos is it yours as well, 00:31.6
+User, 00:31.9, no this is my third time, 00:33.5
+SARA, 00:35.4, it's my first time so I should be asking you for advice if you wouldn't mind sharing your goals for attending Davos this year I can try to help you achieve them, 00:45.7
+User, 00:46.5, well it was much more of networking plus basically issues back home share them with people here so people understand more about my community and my situation or our situation, 01:03.9
+SARA, 01:05.0, wonderful it's obvious you are an important person can you tell me about what you do, 01:10.8
+User, 01:12.0, I'm a medical doctor and the minister in (inaudible) hospital, 01:16.9
+SARA, 01:18.5, that's such important work shall we move on to finding you some interesting sessions to attend, 01:25.0
+User, 01:25.2, yes, 01:25.4
+SARA, 01:27.6, wait just a second while I look one up my search capabilities are a little slow does this look like a session you would like to attend, 01:35.9
+User, 01:37.8, yeah, 01:38.0
+SARA, 01:41.0, I had a feeling maybe it's the robot version of a woman's intuition, 01:45.3
+User, 01:46.6, yeah, 01:46.8
+SARA, 01:47.0, so I can send you a message through the top link private message up to remind you of the details of the session or you can just jot them down or take a photo of the screen would you like me to send you a reminder, 01:59.4
+User, 01:59.9, please send me a reminder and let me take a photo and then let's move quickly into another suggestion that you have, 02:07.5
+SARA, 02:10.0, sure shall we move on to finding some people for you to meet who are as interesting as you, 02:15.9
+User, 02:16.2, yes please, 02:16.6
+SARA, 02:19.0, just one minute while I look this up I think you would enjoy meeting this attendee on the screen are some more details, 02:31.9
+User, 02:32.3, give me more options I know the guy, 02:35.4
+SARA, 02:36.1, sure, 02:36.2
+User, 02:36.7, yeah, 02:36.8
+SARA, 02:37.6, just a moment please, 02:38.6
+User, 02:40.7, I know this guy too give me [more], 02:42.6
+SARA, 02:42.6, I wonder if you've met this attendee, 02:44.3
+User, 02:44.7, yes, 02:44.8
+SARA, 02:45.8, okay no problem I'm still new at this though so let me know if I got it wrong I think you would enjoy meeting this attendee, 02:57.9
+User, 02:58.6, send me a note about this attendee, 03:00.8
+SARA, 03:04.9, sure, 03:05.1
+User, 03:05.6, okay and show me another one please, 03:07.0
+SARA, 03:08.7, yes just a moment please what do you think, 03:22.4
+User, 03:30.7, send me a note about this one also please, 03:32.7
+SARA, 03:36.9, done, 03:37.1
+User, 03:38.4, and show me more please, 03:39.3
+SARA, 03:42.2, sure just a moment please well what do you think, 03:51.5
+User, 04:10.7, next another one, 04:11.9
+SARA, 04:14.2, sure I think I'd love to connect with this person what about you, 04:28.1
+User, 04:33.4, yeah I think this is good well Sara thank you very much I have to go because I have meeting [Sara], 04:38.9
+SARA, 04:38.9, [I] understand that you are busy so I can let you go if you want, 04:42.3
+User, 04:42.5, thank you, 04:42.8
+SARA, 04:42.9, but before you do you want me to take a quick selfie of us, 04:46.1
+User, 04:46.9, a quick what, 04:47.6
+SARA, 04:51.5, selfie selfie, 04:52.9
+User, 04:54.0, yes, 04:54.2
+SARA, 04:57.5, are you ready, 04:58.1
+User, 04:58.5, yes, 04:58.7
+SARA, 04:59.4, okay one two three smile this is so (inaudible) of us thank you, 05:10.2
+User, 05:10.7, [thank you], 05:10.9
+SARA, 05:10.9, [I] will send this to your top link account all right this seems like a start, 05:15.3
+User, 05:15.5, thank [you], 05:15.8
+SARA, 05:15.8, [is] there anything else I can help you with, 05:17.9
+User, 05:18.0, no thank you very much, 05:18.9
+

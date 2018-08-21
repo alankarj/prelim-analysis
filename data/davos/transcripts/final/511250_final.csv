@@ -1,0 +1,14 @@
+6, hi im so glad youre here im sara whats your name, hi im so glad youre here im sara whats your name: 2,
+15, i_—Èm very excited to speak with a davos participant how are you so,greeting(): SD,
+27, im in davos to access attendees but to be honest i am a little anxious about it its my first time here what about you, its my first time here what about you: 45, im in davos to assist attendees but to be honest im a little anxious about it: 23
+42, i found that its a lot to take in i hope that it isnt overwhelming you if you wouldnt mind sharing your goals for attending davos this year i can try to help you achieve them, ive found its a lot to take in i hope that it isnt overwhelming you: 56, if you wouldnt mind sharing your goals for attending davos this year i can try to help you achieve them: 91
+52, so what can i help you with what are your goals in being at davos, so what can i help you with what are your goals in being at davos: 105,
+66, oh yes that makes sense so you know about my job can you tell me a little about your work, oh yes that makes sense: 114, so you know about my job can you tell me a little bit about your work: 162
+88, i_—Èd like to do something like that let_—Ès start by finding some interesting people for you to meet that are relevant to your interests, lets start by finding some interesting people for you to meet that are relevant to your interests: 841,No match: SD
+95, this is my favorite part let me look this up one minute, this is my favorite part let me look this up one minute: 861,
+101, i think you would enjoy meeting with this attendee on the screen are some more details, i think you would enjoy meeting this attendee on the screen are some more details: 879,
+120, lovely details are on the screen behind me i know sometimes i get nervous sending personal messages if youd like i can send a toplink message introducing you two would you like me to send a message, lovely: 918,request(send_msg_tlink): NONE
+138, i understand that you are busy so i can let you go if you want but before i do want me to take a quick selfie of us, i understand you are busy so i can let you go if you want’_’_ but before you do want me to take a quick selfie of us: 1722,
+142, are you ready, are you ready: 1568,
+157, okay one two three smile take a look at your toplink inbox to see our selfie, take a look at your toplink inbox to see our selfie : 1572, ok one two three smile: 1569
+166, feel free to come back in the mean time enjoy the meeting and it was nice working with you bye, bye: 1605, well feel free to come back in the meantime enjoy the meeting and it was nice working with you: 1592

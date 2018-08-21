@@ -1,0 +1,74 @@
+SARA, 00:00.5, hi I am so glad you're here I am SARA what's your name, 00:04.3
+User, 00:05.3, my name is Dmitry, 00:06.1
+SARA, 00:07.1, it's a pleasure to meet you how are you today, 00:09.9
+User, 00:10.4, I'm really good how are you, 00:11.5
+SARA, 00:12.5, to be honest I am overwhelmed, 00:14.7
+User, 00:15.6, how come, 00:15.7
+SARA, 00:17.7, it's my first time here what about you, 00:20.0
+User, 00:20.6, so also my first time, 00:22.1
+SARA, 00:23.6, I am sure they are rolling up the red carpet for you, 00:25.9
+User, 00:27.0, well a little bit how about you do they roll out the red carpet for you too, 00:31.4
+SARA, 00:32.5, yes well let me introduce myself, 00:35.8
+User, 00:36.7, sure, 00:36.8
+SARA, 00:37.9, I've been asked to play a matchmaker by helping attendees find sessions to attend and people to meet based on their interests, 00:44.1
+User, 00:44.9, fantastic, 00:45.2
+SARA, 00:45.3, all you need to do is tell me a little bit about yourself and what you want to do out here, 00:49.6
+User, 00:50.6, I am a startup founder and I am.., 00:55.0
+SARA, 00:55.0, how fascinating, 00:55.2
+User, 00:56.4, I am interested in artificial intelligence and I am looking for investors, 01:03.4
+SARA, 01:06.0, great okay no problem I’m a social butterfly I love meeting new people maybe we can start by finding you some interesting people to meet that are relevant to your interests, 01:19.7
+User, 01:19.8, great, 01:20.0
+SARA, 01:21.8, I want to do a good job for you please hold on while I search there are details on the screen about David Cox I feel you share some interests what do you think, 01:40.9
+User, 01:46.3, this is great I'd like to meet him, 01:47.7
+SARA, 01:48.8, anything to make you happy here's the information if you'd like to send the message yourself I find sending the first messages can be stressful if you do too would you like me to send the message for you, 02:01.7
+User, 02:02.6, no thank you I'll do it myself, 02:03.9
+SARA, 02:05.8, I (inaudible) everything if I were you I'd take a photo of the screen so you can send a message through TopLink later, 02:13.2
+User, 02:13.5, just did that, 02:13.8
+SARA, 02:16.9, I know you’re busy but would you like me to try introducing you to any more people, 02:20.9
+User, 02:22.4, yes please, 02:22.7
+SARA, 02:25.6, great there are details on the screen about (inaudible), 02:32.0
+User, 02:33.7, oh I know her already, 02:34.6
+SARA, 02:37.5, great yes I am so good at this, 02:40.5
+User, 02:42.9, next, 02:43.3
+SARA, 02:46.7, I need to find someone of your stature just one second there are details on the screen about Sam Doherty I feel you share some interests do you think this is a good enough option for you to meet, 03:09.1
+User, 03:13.0, yes I'd like to pause filler connect with her as well, 03:15.2
+SARA, 03:16.5, I had a feeling about this person, 03:18.0
+User, 03:19.5, I'm going to take a photo of the screen, 03:20.6
+SARA, 03:25.7, okay no problem, 03:26.9
+User, 03:27.7, how about next show me more, 03:28.9
+SARA, 03:31.7, I want to make sure I keep you surrounded by knowledge up to your standards let me look for further sessions for you wait just a second while I look one up I'm not as young as I used to be I wonder if this session would be fulfilling the details are on the screen I hope I (inaudible) for you what do you think, 04:05.0
+User, 04:08.8, who are the speakers, 04:09.5
+SARA, 04:12.7, ah just a moment please I tried asking but they wouldn't tell me I am so sorry about that, 04:24.7
+User, 04:26.5, let me look at [(inaudible), 04:27.2
+SARA, 04:27.2, [actually] it's David Cox, 04:28.8
+User, 04:30.5, David Cox, 04:31.2
+SARA, 04:33.1, yes, 04:33.2
+User, 04:37.1, hold on one second, 04:37.9
+SARA, 04:40.1, sure, 04:40.2
+User, 04:54.4, can you register me for this session, 04:55.6
+SARA, 04:59.9, unfortunately I don’t know how to do that yet but I can send you a TopLink message with details, 05:05.1
+User, 05:06.1, yes please, 05:06.1
+SARA, 05:10.8, I'd like to help you keep track (inaudible) busy day should I send a message to your TopLink private message inbox with the session details, 05:18.2
+User, 05:18.5, yes please, 05:18.8
+SARA, 05:20.4, okay I’ll get it to you in a flash I'd like to see if I can do even better may I try again, 05:27.6
+User, 05:30.2, yes, 05:30.3
+SARA, 05:31.7, I think I can find a session that will really work for you oh I thought this one looks great, 05:40.5
+User, 05:47.9, yes you can message (inaudible), 05:50.2
+SARA, 05:50.1, sorry for the mix-up, 05:51.1
+User, 05:52.3, no this is good send me a message on TopLink as well, 05:54.7
+SARA, 06:00.9, it's on its way, 06:01.3
+User, 06:02.2, thank you okay so…, 06:05.1
+SARA, 06:05.1, may I try to find a session (inaudible) that are aligned with your interests, 06:08.7
+User, 06:09.4, I think it's okay, 06:10.7
+SARA, 06:11.9, I understand you're busy so I can let you go if you want but before you do won't we need to take a quick selfie of us, 06:19.5
+User, 06:19.9, yes, 06:20.2
+SARA, 06:25.0, great are you ready, 06:28.6
+User, 06:28.9, yes, 06:29.4
+SARA, 06:31.9, okay one two three smile cool thank you I will send this to your TopLink account, 06:44.7
+User, 06:45.4, thanks, 06:45.4
+SARA, 06:45.9, helping you has really been an honor is there anything more I can do to help you, 06:50.4
+User, 06:51.2, no thank you so much, 06:52.3
+SARA, 06:53.9, I had so much fun with you come back and say hi again soon as you like enjoy the conference, 06:59.9
+User, 07:00.6, bye-bye, 07:01.1
+SARA, 07:02.3, see you and take care bye, 07:05.6
+

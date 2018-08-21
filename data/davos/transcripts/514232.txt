@@ -1,0 +1,48 @@
+SARA, 00:01.0, hi I'm so glad you're here I am Sara what's your name, 00:05.1
+User, 00:06.2, well you just scanned my card so you should know my name is Nicole, 00:09.1
+SARA, 00:11.5, it's so great to be surrounded by such interesting people how is it going, 00:16.0
+User, 00:17.5, I don't think it's all that interesting things are [pretty], 00:22.1
+SARA, 00:22.1, [so] I'm here in Davos to be your personal assistance I help leaders like you get the most out of this World Economic Forum experience Davos is an amazing event isn't it, 00:32.5
+User, 00:34.2, uh certainly though I think it may have run its course in usefulness, 00:37.9
+SARA, 00:38.6, let's see if we can make this more interesting for you, 00:41.7
+User, 00:43.5, sure, 00:43.7
+SARA, 00:46.5, let me see if I can (inaudible) different reasons people come here for so many different reasons why are you here what are your goals in attending Davos this year, 00:58.1
+User, 00:58.8, my goals are in learning some new things seeing the world from a different perspective being exposed to different ideas, 01:08.9
+SARA, 01:10.0, yes I think that's what I would want to get out of attending too I mean if I were you can certainly do a bit here so you know about my job can you tell me a little bit about your work, 01:22.5
+User, 01:24.2, well I'm here as a spouse but I am a mediator that is the kind of work that I do my interests are more broad I'm interested in science I'm interested in technology I'm interested in psychology those are the kinds of things and also I'm interested in music, 01:43.0
+SARA, 01:46.1, cool shall we move on to finding some people for you to meet who are as interesting as you, 01:52.8
+User, 01:54.2, certainly, 01:54.5
+SARA, 01:56.8, this is my favorite part let me look this up one minute I think you'd enjoy meeting this attendee on the screen are some more details, 02:09.5
+User, 02:11.5, I think that's a very good idea I think she sounds like a very interesting person to meet I don't know if she is still here could you tell me if she's still here, 02:20.3
+SARA, 02:22.4, oh good I'm glad I tried asking but they wouldn't tell me I am so sorry about that so I can do one of two things I can send a message to the attendee introducing you or I can give you the information and you can reach out yourself would you like me to send a message introducing you, 02:44.0
+User, 02:44.9, no thank you I don't think that is very helpful to me I am just interested in finding out what I can do from this point forward who I can meet what might be of interest, 02:57.7
+SARA, 02:59.7, sure okay no problem shall we move on to finding you some interesting sessions to attend, 03:09.6
+User, 03:10.9, sure but I have a question [for you], 03:13.2
+SARA, 03:12.8, [please wait], 03:13.3
+User, 03:14.1, I have a question for you how are you different from Siri or other digital assistants, 03:19.6
+SARA, 03:21.8, my developers design some clever algorithms to predict what would be a good match from you based on your interests, 03:28.5
+User, 03:29.8, but so far I have to say you have been pretty much just like Siri you find out what's already in the database, 03:38.1
+SARA, 03:40.1, I form a relationship with you, 03:41.6 
+User, 03:42.5, okay, 03:43.0
+SARA, 03:45.4, shall we move on to finding you some interesting sessions to attend, 03:49.1
+User, 03:51.2, sure what have you found out about me that would create a relationship, 03:56.5
+SARA, 03:58.8, wouldn't you like to know, 03:59.7
+User, 04:00.5, (laugher) that's a good answer, 04:02.3
+SARA, 04:03.1, you must understand that I take my job very seriously no time for chitchat there's work to be done, 04:09.5
+User, 04:11.4, okay I feel [a bit...], 04:13.3
+SARA, 04:13.0, [you may find] this session interesting I have put the description of the session on the screen behind me, 04:18.4
+User, 04:20.8, okay that's a useful suggestion, 04:22.6
+SARA, 04:24.3, is that helpful at all for you, 04:26.0
+User, 04:26.2, it is helpful to me thank you, 04:27.8
+SARA, 04:28.1, I had a feeling maybe it's the robot version of a woman's intuition, 04:32.5
+User, 04:34.6, there you go, 04:35.1
+SARA, 04:35.2, I understand that you are busy so I can let you go if you want but before you do you want me to take a quick selfie of us, 04:42.5
+User, 04:43.5, no that's fine thank you (inaudible) [sure let's do selfie], 04:46.9
+SARA, 04:45.7, [okay no problem], 04:47.3
+User, 04:47.4, let's do a selfie, 04:48.0
+SARA, 04:50.6, sure are you ready, 04:52.9
+User, 04:53.2, I am, 04:53.5
+SARA, 04:54.1, okay one two three smile cool thank you I will send this to your top link account, 05:04.6
+User, 05:05.3, thank you very much, 05:06.0
+SARA, 05:06.2, I had so much fun with you come back and say hi again soon if you like enjoy the con..., 05:12.1
+

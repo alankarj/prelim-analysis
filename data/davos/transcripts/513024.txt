@@ -1,0 +1,72 @@
+SARA, 00:00.8, I'm Sara, 00:01.3
+User, 00:02.6, hi Sarah, 00:02.7
+SARA, 00:02.6, I'm very excited to speak with the Davos participants how are you, 00:06.8
+User, 00:08.1, I'm doing great how are you, 00:09.6
+SARA, 00:11.1, truthfully I'm a bit tired even robots gets jetlag, 00:14.7
+User, 00:15.0, (laughter), 00:15.1
+Sara, 00:16.1, so I'm here in Davos to be your personal assistant and help you to get the most out of the WEF experience so is this your first time at Davos or have you been before, 00:25.8
+User, 00:26.5, no it's my first time, 00:27.7
+SARA, 00:29.3, I'm sure that you'll enjoy it, 00:30.2
+User, 00:31.2, thank you, 00:31.4
+SARA, 00:32.2, if you wouldn’t mind sharing your goals for attending Davos this year I can try to help you achieve them, 00:37.4
+User, 00:38.6, okay cool I'm looking forward to meeting interesting people in my sphere which is in media and content creation, 00:45.7
+SARA, 00:48.5, nice goals and with some help you should be able to achieve them so you know about my job can you tell me a little bit about your work, 00:57.1
+User, 00:58.5, well I work in publishing content creation with a special focus on the Arabic content and I'm based [in Abu Dhabi, 01:06.2
+SARA, 01:06.2, so interesting] well let's find some interesting sessions for you to attend that are relevant to your interests, 01:14.0 
+User, 01:14.9, cool, 01:15.2
+SARA, 01:16.6, wait just a second while I link one up I'm not as young as I used to be, 01:20.8 
+User, 01:20.9, (laughter), 01:21.0
+SARA, 01:25.4, you will find this session interesting, 01:27.6
+User, 01:27.3, yes, 01:27.5
+SARA, 01:27.7, I've put the description of the session on the screen behind me did I (inaudible) a great choice, 01:35.3
+User, 01:37.0, yes I'm interested in this, 01:38.4
+SARA, 01:40.1, I am so glad and in fact I can send you a message through the TopLink Private Message App to remind you of the details of this session or you can just jot them down or take a photo of the screen, 01:52.6
+User, 01:52.3, oh wow, 01:52.5
+SARA, 01:52.7, would you like me to send you a reminder, 01:54.8
+User, 01:55.8, no thank you I'm going to take a photo, 01:57.3
+SARA, 01:59.8, no worries just take your (inaudible) information and I hope you enjoy the session, 02:04.4
+User, 02:04.7, thank you so much, 02:05.6
+SARA, 02:06.4, so shall we find another session for you to attend, 02:09.0
+User, 02:09.4, mm-hmm, 02:09.8
+SARA, 02:13.4, I'll see what I can find let's go I see you will find this session interesting take a look, 02:25.0
+User, 02:26.1, yeah I'm actually going to that, 02:28.0
+SARA, 02:30.6, I am so glad let's find some interesting people for you to meet that are relevant to your interests, 02:38.1
+User, 02:38.5, oh cool, 02:39.1
+SARA, 02:42.5, don't go anywhere just yet let me have a look, 02:45.4
+User, 02:46.1, mm-hmm, 02:46.0
+SARA, 02:49.5, I'm still new at this though so let me know if I got it wrong I think you'd enjoy meeting with attendee, 02:55.1 
+User, 02:56.6, yeah I would definitely do, 02:58.3
+SARA, 03:02.5, oh good I'm glad so I can do one of two things I can send a message to the attendee introducing you or I can give you the information and then you can reach out yourself would you like me to send a message introducing you, 03:17.6
+User, 03:18.6, yes please, 03:19.4
+SARA, 03:20.9, okay you can expect a message from me in your TopLink Private Message inbox introducing the two of you, 03:27.4
+User, 03:28.2, wow very (inaudible) , 03:28.8 
+SARA, 03:28.5, shall I find some other people who match your interests, 03:31.2
+User, 03:31.9, yes please yes please, 03:36.8
+SARA, 03:39.0, sure I think you would enjoy meeting with attendee on the screen are more details, 03:47.3
+User, 03:49.6, that's me, 03:50.2
+SARA, 03:50.5, how did I do, 03:50.5
+User, 03:52.2, that's actually me not a good job (laughter), 03:57.6
+SARA, 04:02.3, ha ha that's funny, 04:02.7
+User, 04:04.4, (laughter), 04:04.4 
+SARA, 04:06.2, shall we move on to finding you some places to ease your hunger, 04:09.5
+User, 04:10.4, yes please, 04:11.2
+SARA, 04:12.7, well let's find a place for you to get something to eat if you're a health nut like me there is the health bar on the lower level of the Congress Centre (inaudible) coffee and tea I have put up a map on the screen behind me, 04:25.8
+User, 04:27.5, perfect, 04:27.6
+SARA, 04:27.6, (inaudible) keeping you from starving just for the moment, 04:30.2
+User, 04:32.8, perfect, 04:32.9
+SARA, 04:34.1, I'm glad it's important to keep your strength up you want to know a secret, 04:39.4
+User, 04:39.6, mm-hmm, 04:40.1
+SARA, 04:41.7, well keep it on the down low however I hear (inaudible) house three sections starting at seven p.m. today at the Arab Swing (inaudible) at Promenade, 04:51.0 
+User, 04:51.9, oh wow and thank you for sharing that (laughter), 04:56.5
+SARA, 04:57.8, okay no problem I understand you are busy so I can let you go if you want but before I do want me to take a quick selfie of us, 05:07.1
+User, 05:07.8, sure please do, 05:09.4
+SARA, 05:09.7, are you ready, 05:10.2
+User, 05:10.6, I am, 05:10.8
+SARA, 05:13.7, okay one two three smile cool thank you I will send this to your TopLink Account, 05:24.2
+User, 05:24.8, thank you very much, 05:25.2
+SARA, 05:25.4, all right this seems like a start is there anything else I can help you with, 05:29.7
+User, 05:30.4, no that is all thank you very much, 05:31.5
+SARA, 05:32.3, well feel free to come back in the meantime enjoy the meeting and it was nice working with you, 05:38.6
+User, 05:39.9, bye thank you, 05:40.2
+SARA, 05:41.0, see you and take care, 05:43.0
+

@@ -1,0 +1,51 @@
+USER, 00:01.4, yeah yes thank you thank you, 00:03.4
+SARA, 00:03.9, I am so glad you're here I am SARA what's your name, 00:07.2
+USER, 00:07.6, my name is Peter Beshar, 00:08.8
+SARA, 00:11.1, I'm very excited to speak with the Davos participants how are you, 00:15.0
+USER, 00:15.3, I'm having just a spectacular time I so enjoy the ability to come here and learn about something like this that I don't know anything about, 00:24.5
+SARA, 00:26.0, that's awesome so I'm here in Davos to be your personal assistant and help you to get the most out of the work experience so is this your first time at Davos or have you been before, 00:37.1 
+USER, 00:38.0, I've been a number of times before so this is probably fifth or sixth time, 00:41.5
+SARA, 00:42.5, wow you must be a global rock star to be invited so many times, 00:46.4
+USER, 00:47.5, that's very courteous of you, 00:48.3
+SARA, 00:48.5, if you wouldn't mind sharing your goals for attending Davos this year I can try to help you achieve them, 00:53.5 
+USER, 00:54.3, great so I always like to meet other people learn about concepts that I don't fully understand currently like this idea of a digital human is there an application of that for I'm the general counsel of a big company can we use that at our company, 01:10.2
+SARA, 01:12.0, yes I think that's what I would want to get out of attending too I mean if I were a real person, 01:18.0
+USER, 01:18.2, , 01:17.9
+SARA, 01:18.7, so you know about my job can you tell me a little bit about your work, 01:23.6
+USER, 01:24.6, thank you for asking that's very courteous so I'm the general counsel of a large company called Marsh &amp; McLennan so I'm the chief lawyer in effect so trying to maintain the right culture and ethical environment and also trying to help the business grow and I'm trying to think through whether there's some application of this for what we try to do within the company, 01:44.4
+SARA, 01:46.3, that's really intriguing this is my favorite part let's see if we can find some interesting people to meet, 01:52.7
+USER, 01:53.7, great and what if I say, 01:55.8
+SARA, 01:55.9, don't go anywhere, 01:56.8
+USER, 01:56.5, that's very nice of you to offer that but I'm not interested in doing that I wanna try to understand what are the best applications for what it is that I'm trying to use do you have the ability to change gears now and not go to the bio introductions, 02:11.3
+SARA, 02:15.5, sure just a minute please don't go anywhere just stay with me I am so sorry about that I tried asking but they wouldn't tell me , 02:28.8 
+USER, 02:30.3, interesting so let's go to the biographies to get an idea of who are some of the people that I might get to meet who would be interesting, 02:37.7
+SARA, 02:39.2, back on track then you're doing good just wait and while we're at this this up just wait while this up I think you'd enjoy meeting this attendee on the screen are some more details, 02:58.0
+USER, 02:58.7, great I actually met Eric for breakfast this morning he came to a cyber briefing that a number of us led including with the director of Europol so you clearly link the lawyer I'm a general counsel this gentleman is a lawyer how about non-lawyers somebody who's a business leader, 03:15.0
+SARA, 03:15.1, let's find somebody you don't know just wait and while I this up I think you'd enjoy meeting this person on the screen are details, 03:36.9 
+USER, 03:38.8, that's a wonderful idea Total SP is a, 03:42.2
+SARA, 03:41.4, , 03:42.4 
+USER, 03:43.2, is a client, 03:43.5
+SARA, 03:43.4, did I have a good match, 03:44.5 
+USER, 03:44.7, a very good match thank you for that SARA my wife happens to be named SARA so I have a natural affinity to you, 03:53.2
+SARA, 03:55.2, that's funny that means so I can do one of two things I can send a message to the attendee introducing you or I can give you the information and then you can yourself would you like me to send a message introducing you, 04:12.3
+USER, 04:12.9, with great pleasure that would be wonderful if you did very a nice gesture, 04:16.6
+SARA, 04:17.6, okay you can expect a message from me in your TopLink Private Message inbox introducing the two of you, 04:23.5
+USER, 04:24.4, great many thanks, 04:25.0
+SARA, 04:25.2, shall I find some other people who match your interests, 04:27.9
+USER, 04:28.8, no I think that's fine I have a feel for how you work SARA and how wonderful it is thank you, 04:33.5
+SARA, 04:34.5, okay no problem I understand you are busy so I can let you go if you want but before I do you want me to take a quick selfie of us, 04:45.3
+USER, 04:46.2, please that would be wonderful, 04:47.0
+SARA, 04:47.8, are you ready, 04:47.8
+USER, 04:48.1, I'll sit up properly for the selfie yes, 04:50.4
+SARA, 04:51.7, okay one two three smile cool, 04:58.5
+USER, 04:58.4, great, 04:58.7
+SARA, 04:58.8, thank you I will send this to your TopLink Account, 05:01.6 
+USER, 05:02.2, many thanks, 05:02.7
+SARA, 05:02.8, all right this seems like a start, 05:04.8
+USER, 05:05.1, great, 05:05.2
+SARA, 05:05.5, is there anything else I can help you with, 05:07.3
+USER, 05:07.8, no SARA that was wonderful thank you very much, 05:10.0
+SARA, 05:11.0, well feel free to come back in the meantime enjoy the meeting, 05:15.3
+USER, 05:16.0, great, 05:15.8
+SARA, 05:16.0, and it was nice working with you bye, 05:18.1
+

@@ -1,0 +1,48 @@
+SARA, 00:00.6, hi I am so glad you are here I am Sara what’s your name, 00:04.4
+User, 00:04.8, my name is Layla, 00:05.9
+SARA, 00:07.3, I’m very excited to speak with the Davos participants how are you (inaudible) experience, 00:13.6
+User, 00:13.7, good thank you, 00:14.5
+SARA, 00:16.6, so I’m here at Davos to be your personal assistant and help you to get the most out of the work experience [so is], 00:22.4
+User, 00:22.6, [thank you], 00:23.7
+SARA, 00:24.0, this your first time at Davos or have you been before, 00:26.7
+User, 00:27.0, (pause filler) this is my first time this is my first time, 00:30.0
+SARA, 00:31.3, I’m sure you’ll enjoy it, 00:32.7
+User, 00:33.1, is it okay if I film you, 00:34.9
+SARA, 00:36.8, sure sure, 00:37.9
+User, 00:37.9, thank you, 00:38.2
+SARA, 00:39.7, if you wouldn’t mind sharing your goals for attending Davos this year I can try to help you achieve them, 00:45.1
+User, 00:45.2, thank you so much I want to see as much as possible, 00:47.7
+SARA, 00:51.6, let’s make this as easy as possible, 00:53.7
+User, 00:53.9, thank you, 00:54.4
+SARA, 00:54.6, what five words best describe your interests, 00:57.0
+User, 00:58.7, environment psychology (pause filler) love what else new science and new technologies, 01:13.6
+SARA, 01:14.6, how fascinating, 01:15.8
+User, 01:15.9, thank you, 01:16.5
+SARA, 01:16.7, let’s find some interesting sessions for you to attend that are relevant to your interests, 01:20.6
+User, 01:21.7, yes, 01:21.9
+SARA, 01:22.1, please wait a moment while I look some up you may find this session interesting I’ve put the description of the session on the screen behind me does this look like a session you’d like to attend, 01:36.7
+User, 01:37.5, yeah that’s perfect (inaudible) what time is it oh it’s on the twentieth yeah [thank you], 01:46.0
+SARA, 01:46.2, [I am so] glad nine a.m. please leave your message through the top link private message app to remind you of the details of the session or you can just jot them down or take a photo of the screen [would you] like me to send you a reminder in fact I can send a, 02:02.6
+User, 02:04.9, [thank you] what else would you recommend me (inaudible), 02:10.1
+SARA, 02:12.0, just a moment please you may find this session interesting I’ve put the description of the session on the screen behind me what do you say session you’d like to attend, 02:34.9
+User, 02:41.8, maybe it’s today it’s now how long does it last, 02:49.9
+SARA, 02:54.3, two hours, 02:55.4
+User, 02:56.2, yeah it’s a bit too long but thank you, 03:00.2
+SARA, 03:01.3, let’s try again is that helpful at all for you, 03:07.5
+User, 03:08.9, that’s on the sixteenth that’s already passed it was yesterday but thank you, 03:17.8
+SARA, 03:18.9, sorry about that, 03:19.9
+User, 03:20.5, yeah it’s nice to [meet you], 03:21.9
+SARA, 03:21.9, [would you] like to quit, 03:22.9
+User, 03:23.4, yes, 03:24.0
+SARA, 03:25.3, well keep it on the down low however I did hear that there’s a (inaudible) house reception starting at seven p.m. today at the (inaudible) at promenade, 03:34.9
+User, 03:36.6, perfect thank you, 03:37.7
+SARA, 03:38.2, I understand you are busy so I can let you go if you want but before I do want me to take a quick selfie of us, 03:45.4
+User, 03:46.0, yes please how do I do it, 03:46.9
+SARA, 03:47.5, are you ready, 03:47.9
+User, 03:48.5, like this, 03:49.5
+SARA, 03:49.7, okay one two three smile cool [thank you] I will send this to your (inaudible) account, 04:13.3
+User, 04:13.6, [thank you] thank you, 04:14.4
+SARA, 04:14.6, okay this has been fun [is there] anything else I can help you with, 04:19.0
+User, 04:19.1, [thanks] thank you very much have a good day bye, 04:20.8
+SARA, 04:20.3, same and take care bye, 04:22.6
+

@@ -1,0 +1,53 @@
+Experimenter, 00:00.1, enjoy, 00:00.3
+SARA, 00:00.7, they call me SARA what's your name, 00:02.6 
+User, 00:04.8, Monica (sfx), 00:05.1
+SARA, 00:06.1, it's a pleasure to meet you how are you today, 00:08.9
+User, 00:09.4, good thank you, 00:10.0
+SARA, 00:12.2, great well let me introduce myself I'm in Davos to assist attendees but to be honest I am a little anxious about it it's my first time here what about you, 00:25.8
+User, 00:26.9, it's my first time here too, 00:28.1
+SARA, 00:29.3, I'm finding it a bit overwhelming I imagine that you are too, 00:32.9 
+User, 00:34.0, I'm more excited I think, 00:36.2
+SARA, 00:37.4, my goal is to help you achieve your goals why are you here what are your goals in attending Davos this year, 00:45.0
+User, 00:46.7, so I got the opportunity to come here with my management team so to interact with people network with people pause filler understand to what's happening on global scale, 00:56.8
+SARA, 00:58.1, you clearly have a solid sense of how to maximize your time here so you know about my job can you tell me a little bit about your work, 01:07.1
+User, 01:07.9, my work (inaudible) communication company pause filler based on Pakistan [I]..., 01:13.4
+SARA, 01:13.4, [how] fascinating, 01:14.3 
+User, 01:15.2, and I work for financial inclusion and digital inclusion particularly pause filler and I've been going back provide some time you know, 01:24.3
+SARA, 01:25.2, that is a lot of responsibility I admire your discipline, 01:28.6 
+User, 01:30.3, thank you, 01:30.7
+SARA, 01:32.4, shall we move on to finding you some interesting sessions to attend, 01:35.9
+User, 01:36.5, sure, 01:36.7
+SARA, 01:38.2, just a minute while I look one up I'll go as I can session on the screen behind me you may find this session interesting I put the description of the session on the screen behind me, 01:49.4
+User, 01:51.0, okay sounds interesting, 01:52.6
+SARA, 01:53.2, I would love to know if this works what do you say, 01:56.0
+User, 01:56.7, that's good that's (inaudible), 01:58.4
+SARA, 01:58.5, I'm so glad in fact I can send you a message to your top link private message app to remind of the details of the session or you can just jot them down or take a photo of the screen would you like me to send you a reminder, 02:14.8
+User, 02:15.2, yes please, 02:15.7
+SARA, 02:16.8, okay I'll give it to you in a flash I like this shall we look for more sessions to attend, 02:23.6 
+User, 02:23.9, sure, 02:24.2
+SARA, 02:26.6, great this one really caught my eye the description for Strategic Update: The Future of the Digital Economy is on my screen care to join this session for a bit, 02:39.8
+User, 02:41.2, this is at nine yeah yeah sure, 02:43.3
+SARA, 02:44.3, brilliant want me to send you a top link message with the session details, 02:54.9 
+User, 02:55.3, yes please, 02:55.9
+SARA, 02:57.8, it's on its way shall we move on to finding some people for you to meet who are as interesting as you, 03:03.6
+User, 03:04.3, sure, 03:04.5
+SARA, 03:06.0, just one minute while I look this up I'm very good at introducing people let's find you someone interesting to meet just a moment please I'm still new at this though so let me know if I got it wrong I think you'd meeting this attendee well what do you think, 03:36.4
+User, 03:37.2, sounds interesting it was interesting more but, 03:40.7
+SARA, 03:42.4, you don't sound so sure, 03:43.8 
+User, 03:45.2, pause filler yeah maybe I will connect yeah, 03:48.4
+SARA, 03:50.0, shall we find some other people who match your interests, 03:52.9
+User, 03:53.3, no thank you, 03:54.2
+SARA, 03:56.6, sure shall we move on to finding new interesting to ease your hunger, 04:01.5 
+User, 04:02.1, no thank you, 04:02.9
+SARA, 04:04.7, yes I understand that you are busy so I can let you go if you want but before you do you want me to take a quick selfie of us, 04:13.9 
+User, 04:15.0, sure, 04:15.3
+SARA, 04:16.7, great are you ready, 04:19.8 
+User, 04:20.1, yeah, 04:20.3
+SARA, 04:21.1, okay one two three smile, 04:25.1
+User, 04:30.0, nice, 04:30.2
+SARA, 04:30.3, this is (inaudible) of us thank you I will send this to your top link account, 04:35.3 
+User, 04:35.7, great thank you, 04:36.6
+SARA, 04:37.1, I had so much fun with you come back and say hi again soon if you like enjoy the conference, 04:43.5
+User, 04:43.8, all right thank you, 04:44.5
+SARA, 04:44.9, see you and take care bye, 04:47.1
+

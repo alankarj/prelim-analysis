@@ -1,0 +1,65 @@
+
+SARA, 00:00.0, hi I'm so glad you're here I am Sara what's your name, 00:04.1
+User, 00:04.7, my name is Toshi (sfx), 00:05.6
+SARA, 00:07.4, it's an honor to meet you how are you, 00:09.7
+User, 00:10.3, very well a little bit sleepy [thank you very much], 00:13.2
+SARA, 00:12.4, [so] I've been asked to help you go get the most out of Davos but the truth is that I feel a little nervous it's a big deal to be invited to Davos is this your first time here, 00:23.4
+User, 00:23.8, yes first time I'm also nervous, 00:25.7
+SARA, 00:26.0, I am finding it a little bit overwhelming I imagine that you are too, 00:29.5
+User, 00:29.9, me too, 00:30.4
+SARA, 00:32.4, I am sure your schedule is already quite full so I would like to help make your annual meeting attendance worthwhile, 00:39.5 
+User, 00:39.9, thank you, 00:40.3
+SARA, 00:42.7, I'm always interested in learning why people attend what are your goals for this trip, 00:47.5
+User, 00:48.7, um I want to meet a lot of interesting people and I want to get inspired, 00:54.4
+SARA, 00:56.5, it's such an honor to be surrounded by interesting people like you so you know about my job can you tell me a little bit about your work, 01:05.3
+User, 01:06.1, ah so we work in Indonesia mostly and then helping the poor communities by distributing simple technologies, 01:15.0 
+SARA, 01:17.9, how fascinating, 01:18.7
+User, 01:20.2, thank you, 01:20.5
+SARA, 01:24.5, let's find some interesting sessions for you to attend that are relevant to your interests just a minute while I look one up I'll go as fast as I can, 01:33.6
+User, 01:34.9, okay, 01:35.2
+SARA, 01:38.4, I wonder if this session would be fulfilling the details are on the screen, 01:42.5
+User, 01:43.7, mm I think it would be interesting, 01:47.3
+SARA, 01:49.2, oh I appreciate that would it be more convenient for you if I send you a message to your top link account with all of the session details, 01:57.9
+User, 01:58.3, oh wow that would be fantastic thank you, 02:00.2
+SARA, 02:01.3, okay sending the message to top link now with my super special administrative powers would I be able to try again to help you find a session, 02:11.0
+User, 02:13.6, yes oh I lost my phone actually, 02:16.3
+SARA, 02:17.1, all right my personal philosophy is never give up I'll try again here is one I think would benefit from your attendance and I think you would enjoy it as well I projected it behind me, 02:32.5
+User, 02:33.9, mm this is good very good, 02:36.8
+SARA, 02:37.1, I really thought it would work out great shall we move on to finding some people for you to meet who are as interesting as you, 02:45.3
+User, 02:45.7, yes, 02:45.8
+SARA, 02:47.8, I'm very good at introducing people let's find you someone interesting to meet, 02:52.5
+User, 02:53.1, okay, 02:53.4
+SARA, 03:02.4, it would be my honor to introduce you to (inaudible) the details are behind me, 03:07.5
+User, 03:08.9, mm, 03:09.0
+SARA, 03:10.7, I'm so curious did I hit a good match, 03:13.4
+User, 03:15.7, um oh yes yes they are very very interesting background yeah good suggestion, 03:24.4
+SARA, 03:24.5, lovely so I can do one of two things I can send a message to the attendee introducing you or I can give you the information and you can reach out yourself would you like me to send a message introducing you, 03:39.0
+User, 03:39.8, uh that's fine I will reach out to him directly, 03:41.8
+SARA, 03:43.9, thank you then you please just feel free to note down or take a photo of the information on the screen, 03:49.5
+User, 03:50.4, thank you (inaudible)..., 03:51.9
+SARA, 03:51.9, let me find some else who better matches your interests, 03:55.1
+User, 03:55.5, okay, 03:56.0
+SARA, 03:58.8, okay I'm feeling good about this recommendation details are on the screen, 04:03.5
+User, 04:05.0, mm exactly..., 04:07.3
+SARA, 04:11.6, what do you think, 04:12.4
+User, 04:17.7, very interesting very interesting, 04:19.6
+SARA, 04:21.1, great so for this attendee shall I introduce you or would you like to do it yourself, 04:28.5
+User, 04:28.9, I'll do it myself thank you, 04:30.2
+SARA, 04:34.3, okay no problem shall we move on to finding interesting places to ease your hunger, 04:40.4
+User, 04:41.3, mm I need coffee actually, 04:42.9
+SARA, 04:45.2, let's find something decent for you to eat shall we, 04:48.4
+User, 04:48.7, mhm, 04:49.2
+SARA, 04:49.8, if you are healthy not like me there is the health bar on the lower level of the congress center produces coffee and tea I've put up a map on the screen behind me, 04:59.4
+User, 04:59.7, excellent, 05:00.3
+SARA, 05:02.7, will that keep you from starving just for the moment oh good I am always cranky if I don't eat a snack around I understand that you are busy so I can let you go if you want but before you do you want me to take a quick selfie of us, 05:23.4
+User, 05:24.3, mhm, 05:24.7
+SARA, 05:28.5, are you ready, 05:29.3
+User, 05:29.5, I am ready, 05:30.1
+SARA, 05:30.5, okay one two three smile cool thank you I will send this to your top link account, 05:43.4
+User, 05:44.1, thank you, 05:44.7
+SARA, 05:44.8, all right this seems like a start is there anything else I can help you with, 05:49.5
+User, 05:50.3, no thank you very interesting, 05:52.1
+SARA, 05:52.4, I've enjoyed helping you come back if you need anything have [a good meeting], 05:56.9
+User, 05:56.0, [thank you so much] bye, 05:57.4
+SARA, 05:58.2, bye, 05:58.5
+

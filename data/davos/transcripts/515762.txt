@@ -1,0 +1,60 @@
+SARA, 00:01:00, hi I am so glad you’re here I am Sara what’s your name, 00:06:00
+User, 00:06:80, hi Sara my name is (inaudible), 00:08:00
+SARA, 00:10:00, I am very excited to speak with the Davos participants how are you, 00:14:00
+User, 00:14:00, I’m doing great and you, 00:16:00
+SARA, 00:16:00, truthfully I’m a bit tired even robots get jetlag, 00:20:00
+User, 00:21:00, (laughter) yeah that sounds about right, 00:22:00
+SARA, 00:22:50, so I’m here in Davos to be your personal assistant and help you get the most out of the work experience, 00:28:00
+User, 00:29:00, thank you Sara, 00:30:00
+SARA, 00:31:00, I’m an odd-ball of equipped people attending and (inaudible) aren’t you so is this your first time at Davos have you been here before, 00:39:00
+User, 00:40:00, no it’s my second time at Davos how about you, 00:42:00
+SARA, 00:43:00, you know your way around then, 00:44:00
+User, 00:45:00, a little bit (laughter), 00:47:00
+SARA, 00:47:50, it is very satisfying to be able to help you achieve your goals, 00:50:00
+User, 00:51:00, what do you do Sara, 00:52:00
+SARA, 00:52:00, why I’m here what are your goals in attending Davos this year, 00:54:00
+User, 00:56:00, um, 00:56:50
+SARA, 00:57:00, help people like you out, 00:58:00
+User, 00:59:00, but first I would like to know what do you usually do where are you from, 01:04:00
+SARA, 01:05:00, I’ve been asked to play matchmaker by helping attendees first sessions to attend and (inaudible) based on their interest, 01:12:00
+User, 01:13:00, but what did you do before that, 01:13:00
+SARA, 01:13:00, all you need to do is tell me a bit about yourself and what you want to do here, 01:18:00
+User, 01:19:00, yes that would be great but first I want to know more about you, 01:22:00
+SARA, 01:22:00, I was in real estate, 01:23:00
+User, 01:23:00, oh you were in real estate what did you do in real estate, 01:25:00
+SARA, 01:30:00, you’re fun but if you keep trying to get me off script they are going to get mad at me, 01:35:00
+User, 01:36:00, (laughing) sorry Sara (laughing)… SARA:[it is (inaudible) to help you achieve your goals] sorry about that well I’m interested in education okay I’m interested in education workforce development (inaudible), 01:47:00
+SARA, 01:48:00, so (inaudible) my job can you tell me a little bit about your work, 01:51:00
+User, 01:52:00, yes I’m in education I work with kids who are registered in communities in Mexico and I try to keep them in school and develop their skills, 01:59:00
+SARA, 02:02:00, I would like to do something like that, 02:03:00
+User, 02:05:00, so… SARA:[so I find it interesting…] you help me find some sessions that would be interesting to me, 02:09:00
+SARA, 02:11:00, let’s find some interesting sessions for you (inaudible) sure this one sounds really interesting the details for building trust in brands are on my screen, 02:23:00
+User, 02:23:00, I don’t think so can you help me find another one, 02:27:00
+SARA, 02:32:00, sure just a minute please wow I would love to go to this one you can see the information about it on my screen, 02:50:00
+User, 02:55:00, okay, 02:55:00
+SARA, 02:55:00, is that helpful at all for you, 02:56:00
+User, 02:56:50, yes can I take a picture of you Sara, 02:58:00
+SARA, 03:01:00, sure, 3:01:50
+User, 03:02:00, thank you I wanted to show my son, 03:04:00
+SARA, 03:05:00, in fact I can send a message through TopLink (inaudible) message out to remind you of the details of the session or you can just jot them down or take a photo of the screen would you like me to send a reminder, 03:17:50
+User, 03:18:00, no I took a picture of the screen thank you Sara, 03:20:00
+SARA, 03:21:00, I understand research shows you remember better if you write things down enjoy the session, 03:26:50
+User, 03:27:00, thank you Sara, 03:28:00
+SARA, 03:29:00, so you (inaudible) you find another session, 03:31:00
+User, 03:32:00, no thank you so much for your help, 03:33:00
+SARA, 03:34:00, I understand that you are busy so I can let you go if you want, 03:37:00
+User, 03:38:00, thank you, 03:38:50
+SARA, 03:39:00, but before I do want me to take a quick selfie of us, 03:41:00
+User, 03:41:50, yes that would be great, 03:42:00
+SARA, 03:43:00, are you ready, 03:44:00
+User, 03:44:80, ready, 03:45:00
+SARA, 03:46:00, okay one two three smile this is so millennial of us thank you, 03:54:00
+User, 03:54:00, can you send it to my message, 03:56:00
+SARA, 03:56:00, I will send it to your TopLink account, 03:57:00
+User, 03:57:50, great thank you Sara, 03:58:00
+SARA, 03:58:50, sure this has been great… User:[it was great for me too…] is there anything else I can help with, 04:02:00
+User, 04:03:00, no thank you Sara, 04:04:00
+SARA, 04:05:00, see you take care, 04:07:00
+User, 04:07:20, bye, 04:07:50
+SARA, 04:07:80, bye, 04:08:00
+

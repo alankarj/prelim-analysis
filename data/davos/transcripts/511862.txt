@@ -1,0 +1,49 @@
+SARA, 00:00.3, Hi I am so glad you’re here I am SARA what’s your name, 00:04.5
+User, 00:05.0, my name is Natasha, 00:05.9
+SARA, 00:06.8, it’s a pleasure to meet you, 00:08.1
+User, 00:08.6, [likewise, 00:09.2
+SARA, 00:08.8, [how are you today], 00:09.5
+User, 00:10.1, (pause filler) I’m okay how are you, 00:13.1 
+SARA, 00:13.9, to be honest I am a little overwhelmed it’s my first time here what about you, 00:19.7
+User, 00:20.1, I’ve been here many times (pause filler) have you been to talking to a lot of people, 00:23.9
+SARA, 00:24.9, yes wow you must be a global rock star to be invited so many times, 00:29.8
+User, 00:29.8, (laughter) well [I think we are all rock stars, 00:33.4
+SARA, 00:31.5, [so I think I should help] people get the most out of Davos but the truth is that I feel a little nervous, 00:37.7 
+User, 00:38.0, (pause filler) do you have a, 00:38.9
+SARA, 00:38.9, I’ve been asked to play matchmaker by helping attendees find sessions to attend and people to meet based on their interests, 00:45.7
+User, 00:46.0, okay [how do you, 00:47.7
+SARA, 00:47.5, (inaudible) just tell me a little bit about yourself and what you want to do on here, 00:52.1
+User, 00:52.6, okay so I’m interested in tech and health do you have any recommendations, 00:57.5
+SARA, 00:58.6, sure well I’m not sure I have the capabilities to help you with that I can however recommend some people for you to meet and some good sessions to attend, 01:10.1
+User, 01:10.1, okay, 01:10.7
+SARA, 01:12.0, so you know about my job can you tell me a little bit about your work, 01:16.5
+User, 01:17.1, I am not working at the moment I am looking for something new, 01:20.9
+SARA, 01:22.1, yes I can suggest and find some interesting people who do similar work for you to meet, 01:28.5
+User, 01:28.5, okay, 01:29.2
+SARA, 01:30.5, I think you would enjoy meeting this attendee on the screen are some more details, 01:35.2
+User, 01:35.2, okay, 01:35.9
+SARA, 01:36.4, well what do you think, 01:38.3
+User, 01:38.6, can I take a picture of the screen, 01:40.5
+SARA, 01:40.5, sure, 01:41.3
+User, 01:41.9, okay I’m just going to do that okay [do you have, 01:47.8
+SARA, 01:47.5, [I know] I would want an introduction but everyone is different I can either send a message on your behalf suggesting a meeting or I can give you the information and you can set up the meeting yourself, 01:58.7
+User, 01:58.8, I’ll [set up the meeting, 01:59.9
+SARA, 01:59.1, [would you like] me to send the message, 02:00.8
+User, 02:01.2, no definitely not I will set up my own meeting do you have any other suggestions, 02:06.0
+SARA, 02:07.5, sure just a moment please there are details on this screen about (inaudible) I feel you share some interests, 02:18.1
+User, 02:19.2, okay I’m [going to take another picture], 02:21.9
+SARA, 02:20.5, [what do you think] sure, 02:24.4 
+P2, 02:26.1, (pause filler) sorry, 02:26.8 
+User, 02:26.8, very cool I’m going to send my friend in so I will talk to you later thank you, 02:31.6
+SARA, 02:31.9, great I understand you are busy so I can let you go if you want, 02:36.9
+User, 02:36.9, [thank you, 02:37.5
+SARA, 02:37.4, [but before] you do want me to take a quick selfie of us, 02:40.7
+User, 02:41.1, sure let’s do it how do I do this, 02:43.9
+SARA, 02:45.1, are you ready, 02:45.9
+User, 02:45.9, yep I’m ready, 02:47.2
+SARA, 02:47.2, okay one two three smile, 02:51.5
+User, 02:52.8, oops (laughter), 02:58.2
+SARA, 02:58.2, this is (inaudible), 02:59.9 
+User, 02:59.9, I [know thank you, 03:01.5
+SARA, 03:00.4, [thank you I will] send (inaudible) account bye, 03:04.8
+

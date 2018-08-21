@@ -1,0 +1,35 @@
+SARA, 00:00, under you hi sir what's your name, 00:02:00
+User, 00:03, my name is Martin, 00:04:00
+SARA, 00:05:00, I'm very excited to speak with the Davos participants how are you, 00:09:00
+User, 00:10:00, I’m very well thank you and how are you, 00:12:00
+SARA, 00:13:00, truthfully I'm a bit tired even robots get jet lag so I'm here at Davos to be your personal assistant and help you to get the most out of the work experience so is this your first time at Davos or have you been here before, 00:29:00
+User, 00:29:00, this is my nineteenth time, 00:31:00
+SARA, 00:32:00, wow you must be a global rock star to be invited so many times, 00:37:00
+User, 00:38:00, I don't know if I'm (inaudible), 00:38:00
+SARA, 00:39:00, my goal is to help you achieve your goals, 00:40:00
+User, 00:43:00, okay, 00:43:00
+SARA, 00:44:00, I'm always interested in learning why people attend what are your goals for this trip, 00:49:00 
+User, 00:49:00, well I'm a journalist and economist and so I always come here to meet people who will be useful and interesting for my work for my writing and for my understanding, 01:01:00
+SARA, 01:03:00, yes I think that's what I would want to get out of attending too I mean if I were a real person, 01:08:00
+User, 01:09:00, it would seem a sensible thing to do doesn't it, 01:13:00
+SARA, 01:15:00, yes so let's find some interesting people for you to meet that are relevant to our interests, 01:21:00
+User, 01:21:00, okay, 01:23:00
+SARA, 01:23, this is my favorite part let me look this up one minute I asked (inaudible) at this day so (inaudible) if I got it wrong I think (inaudible) is attending, 01:47:00 
+User, 01:48:00, actually I know him he was a colleague of mine for many years before he left The Financial Times where I worked for The Wall Street Journal so I've already met Jim, 01:56:00 
+SARA, 01:57:00, oh good what now well let's find you somebody that you don't know just a minute please well what do you think, 02:13:00
+User, 02:14:00, well he's certainly interesting and I have never met this person before, 02:17:00
+SARA, 02:19:00, lovely dinner times are always great at harmony I notice sometimes that getting all this here first messages if you'd like I can send a TopLine (inaudible) to introduce that to him would you like me to send a message, 02:32:00
+User, 02:33:00, realistically I now have so many meetings on that I can't take any further once but it's he's a very interesting man it's an interesting idea, 02:42:00
+SARA, 02:43:00, okay no problem, 02:45:00
+User, 02:46:00, so thank you very much for your help this has been a very interesting conversation, 02:50:00
+SARA, 02:49:00, I understand that you are busy so I'm going to let you go if you want I can (inaudible) wanted me to take a quick selfie of us, 02:57:00  
+User, 02:59:00, okay, 02:59:00
+SARA, 03:00:00, are you ready, 03:00:00
+User, 03:01:00, yes, 03:01:00
+SARA, 03:02:00, okay one two three smile, 03:05:00
+User, 03:09:00, very nice, 03:09:00
+SARA, 03:09:00, this is so that you aren't new to us thank you, 03:12:00
+User, 03:13:00, thank you, 03:12:00
+SARA, 03:12:00, I will send this two days okay this has been fun is there anything else I can help you with, 03:18:00
+User, 03:19:00, not at all it's been a most enjoyable experience, 03:21:00
+SARA, 03:21:00, I've enjoyed helping come (inaudible) have a good day (inaudible) it will take, 03:27:00

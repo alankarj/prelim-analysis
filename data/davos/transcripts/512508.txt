@@ -1,0 +1,74 @@
+SARA, 00:01.3, I am SARA it's my pleasure to meet you how are you today, 00:06.4
+User, 00:07.2, I'm good how about you SARA, 00:08.6
+SARA, 00:10.0, to be honest I'm a little overwhelmed it's my first time here what about you, 00:16.4
+User, 00:17.1, oh first time for me too, 00:18.5
+SARA, 00:19.6, I hope you're not finding it too overwhelming so far, 00:22.3
+User, 00:23.1, no it's quite good I'm okay no I'm doing good, 00:25.4
+SARA, 00:26.6, great if you wouldn't mind sharing you goals for attending Davos this year I can try to help you achieve them, 00:34.3
+User, 00:35.7, actually I have come pause filler here (inaudible) so I'm just looking forward to attend some sessions and meet some big people and have an experience in Davos, 00:46.9
+SARA, 00:48.5, amazing the sessions here are so diverse so interesting, 00:54.6
+User, 00:55.4, yeah absolutely, 00:56.6
+SARA, 01:00.0, let's make this as easy as possible what five words best describe your interests, 01:05.5
+User, 01:06.6, sorry can you repeat repeat the question, 01:08.3
+SARA, 01:10.3, sorry (inaudible) what I said was let's make this as easy as possible what five words best describe your interests, 01:19.2
+User, 01:20.3, pause filler music pause filler meeting people pause filler shopping then pause filler traveling and probably reading some books, 01:38.1
+SARA, 01:41.5, you fit right in let's find some interesting sessions for you to attend that are relevant to your interests, 01:48.1
+User, 01:48.4, sure, 01:48.6
+SARA, 01:49.6, please wait a moment while I look some up you may find this session interesting I’ve put the description of the session on the screen behind me, 02:00.4
+User, 02:01.5, okay artists on the frontlines fighting the Taliban with music okay, 02:07.5
+SARA, 02:09.0, did I (inaudible) a great choice, 02:10.3
+User, 02:11.7, pause yeah kind of, 02:13.9
+SARA, 02:14.8, you don't sound so sure, 02:15.9
+User, 02:16.3, yeah, 02:16.6
+SARA, 02:20.2, I'm sorry I didn't do a good job I hope you will give me a chance to redeem myself, 02:25.1
+User, 02:25.6, okay thank you, 02:28.0
+SARA, 02:28.1, I seem to remember one let me look it up, 02:30.8
+User, 02:31.0, okay, 02:31.4
+SARA, 02:38.2, just a moment please, 02:39.2
+User, 02:39.6, sure no problem, 02:40.4
+SARA, 02:54.3, you may find this session interesting I've put the description of the session on the screen behind me, 02:59.9
+User, 03:01.0, yeah exactly I am actually attending this session I have already signed it up for this session, 03:06.7
+SARA, 03:07.2, yes I'm so good at this, 03:08.9
+User, 03:10.0, I know you are so good SARA, 03:11.7
+SARA, 03:13.7, thanks let's find some interesting people for you to meet that are relevant to your interests, 03:19.6
+User, 03:19.8, okay, 03:20.1
+SARA, 03:22.4, don't go anywhere just yet let me have a look, 03:25.6
+User, 03:26.0, mm-hmm, 03:26.3
+SARA, 03:38.9, I think you would enjoy meeting this attendee on the screen are some more details, 03:43.2
+User, 03:45.0, (inaudible), 03:46.9
+SARA, 03:48.5, what do you think, 03:49.2
+User, 03:50.9, yeah sounds interesting, 03:52.1
+SARA, 03:54.7, great so I can do one of two things I can send a message to the attendee introducing you or I can give you the information and you can reach out yourself would you like me to send a message introducing you, 04:09.5
+User, 04:10.2, pause filler no probably I will reach out pause filler myself, 04:13.0
+SARA, 04:14.8, okay I know I always forget details like this maybe you could take a photo of the information on the screen so that you can send a message yourself, 04:23.5
+User, 04:24.0, okay, 04:24.4
+SARA, 04:27.3, let me know whenever you're all set, 04:29.1
+User, 04:29.7, yeah yep I'm done, 04:48.8
+SARA, 04:50.7, great I can do better let me try again I think you would enjoy meeting with this attendee on the screen are more details what do you think, 05:04.6
+User, 05:08.6, (inaudible) secretary (inaudible) maybe somebody else, 05:13.8
+SARA, 05:16.4, sure just a moment please, 05:18.8
+User, 05:22.6, maybe somebody from film industry, 05:24.4
+SARA, 05:27.1, I think you would enjoy meeting this attendee on the screen are more details looks interesting, 05:36.7 
+User, 05:37.7, yeah kind of, 05:40.1
+SARA, 05:40.6, great, 05:40.9
+User, 05:44.4, okay, 05:44.8
+SARA, 05:45.7, want to know a secret, 05:46.8
+User, 05:49.2, yeah, 05:49.4
+SARA, 05:51.2, well keep it on the down low however I did hear that there’s a Russia House reception starting at seven pm today (inaudible) at Promenade, 06:00.5
+User, 06:00.9, okay, 06:01.2
+SARA, 06:03.1, what can I do to make your Davos experience even more enjoyable, 06:06.7
+User, 06:07.7, I'm good pause filler SARA, 06:09.6
+SARA, 06:10.8, I understand you’re busy so I can let you go if you want but before you do won’t we need to take a quick selfie of us, 06:17.9
+User, 06:18.4, okay, 06:18.9
+SARA, 06:20.0, great are you ready, 06:22.6
+User, 06:23.2, yep, 06:23.3
+SARA, 06:24.8, okay one two three smile cool thank you, 06:34.1
+User, 06:34.5, [thank you SARA, 06:34.9
+SARA, 06:34.5, [I will send] this to your TopLink account, 06:36.7
+User, 06:37.1, okay thank you [SARA, 06:38.4
+SARA, 06:38.0, [well] feel free to come back, 06:39.9
+User, 06:40.1, sure, 06:40.3
+SARA, 06:40.4, in the meantime enjoy the meeting and it was nice working with you, 06:44.3
+User, 06:45.4, bye SARA, 06:46.0
+SARA, 06:46.4, see you and take care bye, 06:49.1
+

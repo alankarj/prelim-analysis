@@ -1,0 +1,33 @@
+SARA, 00:01.9, hi I am so glad you're here I am SARA what's your name, 00:06.2
+User, 00:06.5, Anastasia, 00:07.5
+SARA, 00:08.8, I’m very excited to speak with a Davos participant how are you, 00:13.0
+User, 00:13.4, I'm great how are you, 00:14.7
+SARA, 00:15.6, truthfully I'm a bit tired even robots get jet lag so I'm here at Davos to be your personal assistant and help you to get the most out of the work experience so is this your first time at Davos or have you been before, 00:30.8
+User, 00:31.0, no it's my first time, 00:32.1
+SARA, 00:33.5, I'm sure you'll enjoy it if you wouldn’t mind sharing your goals for attending Davos this year I can try to help you achieve them, 00:41.5
+User, 00:42.6, (pause filler) to meet people to (pause filler) have a personal experience and (pause filler) to find some professional contacts, 00:53.3
+SARA, 00:55.0, excellent goals the sessions here are so diverse so you know about my job can you tell me a little bit about your work, 01:04.4
+User, 01:05.4, (pause filler) I'm working in the field of technical assistant building (pause filler) with boosting the IT entrepreneurship in Ukraine and (pause filler) organizing big international events called (inaudible) Summit in Ukraine, 01:17.7
+SARA, 01:19.3, I'd love to do something like that let's find some interesting sessions for you to attend that are relevant to your interests, 01:27.8
+User, 01:28.8, let's do that, 01:29.2
+SARA, 01:30.2, wait just a second while I look one up my search capabilities are a little slow you may find this session interesting I've put the description of the session on the screen behind me does this look like a session you'd like to attend, 01:52.0
+User, 01:55.3, (pause filler) the Global Innovation Outlook (pause filler) I need yes it's interesting, 02:05.5
+SARA, 02:06.8, I had a feeling maybe it's the robot version of a woman's intuition, 02:11.4
+User, 02:12.5, maybe maybe, 02:13.3
+SARA, 02:13.3, and in fact I can send a message to the TopLink private message app to remind you of the details of this session or you can just jot them down or take a photo of the screen would you like me to send you a reminder, 02:26.0
+User, 02:26.8, (pause filler) yes please, 02:27.6
+SARA, 02:28.6, okay look for a message from me in your TopLink private message inbox shall we move on to finding you some people for you to meet who are as interesting as you, 02:39.6
+User, 02:39.6, no thank you I think that's enough thank you for your help, 02:43.7
+SARA, 02:44.4, I understand you are busy so I can let you go if you want but before you do want me to take a quick selfie of us, 02:51.8
+User, 02:52.3, sure, 02:52.8
+SARA, 02:53.5, are you ready, 02:54.7
+User, 02:55.0, yes should I, 02:55.8
+SARA, 02:57.9, okay one two three smile cool thank you, 03:06.0
+User, 03:06.1, thank [you, 03:06.6
+SARA, 03:06.4, [I will send] this to your TopLink account, 03:08.6
+User, 03:09.2, thank you very much, 03:10.0
+SARA, 03:10.0, until next time I wish you could stay longer, 03:13.2
+User, 03:14.2, bye, 03:14.5
+SARA, 03:15.7, see ya and take care, 03:16.9
+
+

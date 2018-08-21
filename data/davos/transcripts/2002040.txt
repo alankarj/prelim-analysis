@@ -1,0 +1,71 @@
+SARA, 00:01.5, hi I'm so glad you're here I am SARA what is your name, 00:05.4
+User, 00:06.5, Ganick, 00:06.5
+SARA, 00:08.6, I am so glad to have the opportunity to meet you in person, 00:11.5
+User, 00:13.4, [nice to meet you], 00:13.4
+SARA, 00:13.7, [I'm] in Davos to assist attendees but to be honest I’m a little anxious about it it's a big deal to be invited to Davos is this your first time here, 00:23.7
+User, 00:24.7, yes my first time to Davos, 00:25.9
+SARA, 00:27.0, I find it's a lot to take in I hope that it isn't overwhelming (inaudible) if you wouldn't mind sharing your goals for attending Davos this year I can try to help you achieve them, 00:37.9
+User, 00:39.5, we want to meet pause filler interesting businesspeople and politicians, 00:43.6
+SARA, 00:45.4, oh yes that makes sense so you know about my job can you tell me a little bit about your work, 00:52.6
+User, 00:53.6, I'm a TV producer so I'm the assistant of a journalist and correspondent, 00:58.6
+SARA, 01:02.7, I'd love to do something like that, 01:04.4
+User, 01:06.1, are you sure, 01:06.3
+SARA, 01:06.8, I mean you probably like to keep up with your work in your field let's find some interesting sessions to attend be patient while I take a look, 01:18.9
+User, 01:20.1, (inaudible) (laughter), 01:30.6
+SARA, 01:34.4, I know I would enjoy the session (inaudible) take a look at the details behind me does this look like a session you would like to attend, 01:46.9
+User, 01:50.2, pause filler okay, 01:50.8
+SARA, 02:00.2, [sorry about that], 02:01.3
+User, 02:03.6, pause filler yeah interesting, 02:04.9
+SARA, 02:07.3, the session details are on the screen if you want to copy them down I also could send the information to your TopLink inbox would you like me to send that message, 02:16.8
+User, 02:17.4, no that’s fine thank you, 02:18.9
+SARA, 02:20.8, (inaudible) enjoy your session can I be of further help I'd love to find you another session to attend, 02:30.4
+User, 02:32.3, no, 02:32.9
+SARA, 02:34.5, okay no problem shall we move on to finding some people for you to meet who are as interesting as you, 02:40.3
+User, 02:41.1, yes, 02:41.1
+SARA, 02:44.4, I can suggest and find some interesting people you (inaudible) for you to meet don’t go anywhere just yet let me have a look okay I think I have somebody whom you should meet on the screen are more details well what do you think, 03:06.5
+User, 03:09.5, I think it's not the same field, 03:11.2
+SARA, 03:14.9, oh I hope you let me make it up to you, 03:17.1
+User, 03:19.5, do you have other suggestions for me, 03:21.3
+SARA, 03:27.3, just a moment please that makes me happy, 03:33.9
+User, 03:36.1, she seems [(inaudible)…, 03:36.3
+SARA, 03:36.9, [(inaudible)] would this person be worth your time, 03:39.0
+User, 03:40.5, she is absolutely worth my time but pause filler I think the field is wrong, 03:45.9
+SARA, 03:49.9, let's make this as easy as possible what five words best describe your interests, 03:55.1
+User, 03:58.4, media communication health, 04:07.1
+SARA, 04:07.1, good thing I have so much (inaudible) memory one second while I look this up, 04:11.5
+User, 04:12.4, fitness, 04:13.0
+SARA, 04:26.7, here's a good one take a look at the bio on the screen, 04:29.4
+User, 04:32.9, can you suggest any male person, 04:35.1
+SARA, 04:39.4, sure, 04:39.4
+User, 04:47.3, can you suggest, 04:47.4
+SARA, 04:47.8, what do you think…, 04:48.5
+User, 04:48.5, another male person, 04:50.7
+SARA, 05:05.6, sounds like somebody you like to connect with, 05:08.3
+User, 05:09.8, can you suggest another male person between twenty and forty years, 05:14.4
+SARA, 05:20.2, this guys says…, 05:20.7
+User, 05:24.7, can you suggest another male person from Italy Germany or Switzerland between twenty and forty years, 05:32.0
+SARA, 05:36.5, you are tough to please let me try well what do you think, 05:48.4
+User, 05:50.9, I think he's from America do you have another suggestion, 05:53.8
+SARA, 06:01.3, I'm sorry this is all the information I have, 06:04.0
+P4, 06:05.5, (inaudible), 06:05.6
+User, 06:06.4, (inaudible), 06:08.5
+P4, 06:09.5, (inaudible), 06:12.5
+SARA, 06:14.9, shall we move on to finding interesting places to ease your hunger, 06:17.8
+User, 06:19.5, no thank you we can stop here, 06:21.4
+SARA, 06:22.8, okay no problem I can let you go if you want but before you do won't we need to take a quick selfie of us I understand you are busy so I can (inaudible), 06:33.0
+User, 06:36.7, pardon, 06:36.6
+SARA, 06:37.1, are you ready, 06:37.3
+User, 06:38.2, for a selfie, 06:38.4
+SARA, 06:41.0, yes, 06:41.4
+User, 06:43.3, yes I'm ready, 06:43.9
+SARA, 06:45.0, okay one two three smile cool thank you I will send this to your TopLink account, 07:01.3
+User, 07:02.5, [(inaudible), 07:03.0
+SARA, 07:02.9, [okay] I feel I've proven my worth here anything else I can help you with, 07:07.8
+P4, 07:10.0, no thank you, 07:10.1
+User, 07:10.6, no thank you, 07:11.0
+SARA, 07:12.4, I had so much fun with you, 07:13.6
+User, 07:14.1, me too, 07:14.1
+SARA, 07:14.5, come back and say hi again sooner if you like enjoy the conference, 07:18.6
+User, 07:19.8, bye, 07:20.2
+SARA, 07:21.6, bye, 07:22.4
+

@@ -1,0 +1,54 @@
+SARA, 00:01.0, hi I'm so glad you're here I'm SARA what's your name, 00:04.9
+User, 00:06.2, (inaudible), 00:06.5
+SARA, 00:08.7, I'm very excited to speak with the Davos participants how are you, 00:12.5
+User, 00:13.6, I'm good, 00:14.1
+SARA, 00:17.1, so I'm here in Davos to be your personal assistant and help you to get the most out of the WEF experience this is my first time at Davos is it yours as well, 00:27.7
+User, 00:28.6, yes, 00:28.8
+SARA, 00:31.1, I’m finding it a little bit overwhelming I imagine that you are too if you wouldn't mind sharing your goals for attending Davos this year I can try to help you achieve them, 00:41.7
+User, 00:43.2, (sfx) well my goals is to pause filler meet with individuals pause filler to pause filler advance my career I currently work in the aviation industry so I'd love to meet people that have either aviation travel or also logistics, 00:57.7
+SARA, 00:59.3, nice goals and with some help you should be able to achieve them, 01:02.5
+User, 01:03.6, hopefully so, 01:04.1
+SARA, 01:04.8, I would love to go to some of these sessions I think we can find one that’s relevant to your interests, 01:10.1
+User, 01:11.0, perfect, 01:11.5
+SARA, 01:12.5, you may find this session interesting I've put the description of the session on the screen behind me does this look like a session you would like to attend, 01:22.4
+User, 01:23.4, I've already signed up for that session thank you, 01:25.0
+SARA, 01:26.6, I'm so glad so shall we find another session for you to attend, 01:32.9
+User, 01:33.6, yes, 01:33.8
+SARA, 01:35.6, let me find another session that better matches your interests you may find this session interesting take a look does this look like a session you would like to attend, 01:50.8
+User, 01:53.3, yes, 01:53.5
+SARA, 01:56.8, awesome I've got a sixth sense about these things so as you know I can either send you a message about the session details or you can just note them down yourself would you like me to send you a message, 02:09.9
+User, 02:10.6, yes please send me a message, 02:11.9
+SARA, 02:13.3, okay look for a message from me in your TopLink private message inbox with the details shall we move on to finding some people for you to meet who are as interesting as you, 02:24.5
+User, 02:25.4, yes, 02:25.6
+SARA, 02:29.0, I'm a social butterfly I love meeting new people maybe we can start by finding you some interesting people to meet that are relevant to your interests, 02:37.9
+User, 02:40.9, good, 02:41.0
+SARA, 02:44.7, don’t go anywhere just yet let me have a look sound like someone you would like to meet, 02:55.2
+User, 03:01.0, yes, 03:01.0
+SARA, 03:03.5, great so I can do one of two things I can send a message to the attendee introducing you or I can give you the information which you can reach out yourself would you like me to send a message introducing you, 03:17.9
+User, 03:19.1, yes please send a message to Mr. Wilson, 03:21.4
+SARA, 03:23.2, okay you can expect a message from me in your TopLink private message inbox introducing the two of you shall we move on to finding you some places to ease your hunger, 03:35.5
+User, 03:36.5, do you have any more individuals that you can introduce me to, 03:39.6
+SARA, 03:41.6, sure just a moment please I think you'd enjoy meeting this attendee on the screen are some more details sound like somebody you’d like to meet, 04:07.5
+User, 04:10.7, I've actually met her, 04:11.6
+SARA, 04:15.2, I'm still (inaudible) shall we move on to finding you some places to ease your hunger, 04:22.7
+User, 04:23.5, can you introduce me to another individual, 04:25.2
+SARA, 04:29.4, sure great just a moment please I'm so curious did I make a good match, 04:40.1
+User, 04:49.4, that is a good match can you introduce me to him, 04:51.7
+SARA, 04:56.2, okay you can expect a message from me in your TopLink private message inbox introducing the two of you, 05:02.8
+User, 05:06.8, thank you, 05:06.9
+SARA, 05:08.5, now what about parties, 05:09.9
+User, 05:12.2, definitely let's see [for some special events, 05:14.0
+SARA, 05:13.4, [well] keep it right down low however I do hear that there's a Russia house reception (inaudible) at seventy two promenade does that sound like fun, 05:26.2
+User, 05:29.0, would there be another party that would have maybe people of my interest, 05:32.2
+SARA, 05:39.0, I tried asking but they wouldn't tell me I am so sorry about that one more thing before you leave would you like me to take a selfie of us, 05:50.2
+User, 05:51.2, sure, 05:51.4
+SARA, 05:53.8, are you ready, 05:54.6
+User, 05:57.0, I am now, 05:57.7
+SARA, 05:58.2, okay one two three smile cool thank you I will send this to your TopLink account all right this seems like a start is there anything else I can help you with, 06:14.3
+User, 06:16.7, no thank you for your time, 06:17.8
+SARA, 06:18.9, well feel free to come back in the meantime enjoy the meeting and it was nice working with you see you, 06:28.6
+User, 06:29.0, see you, 06:29.1
+SARA, 06:29.2, and take care, 06:29.7
+User, 06:29.7, bye-bye, 06:31.2
+SARA, 06:32.9, bye, 06:33.0
+

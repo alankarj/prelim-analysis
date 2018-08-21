@@ -1,0 +1,51 @@
+SARA, 00:00.6, hi I'm so glad you're here I am Sara what's your name, 00:04.7
+User, 00:05.4, my name is Yoko Hoslan (sfx), 00:06.5
+SARA, 00:07.9, nice of you to take the time to stop by so how are things, 00:11.8 
+User, 00:12.7, things are great I'm enjoying the forum and particularly this Friday nice and calm day actually and I'm sitting here with you, 00:19.6
+SARA, 00:22.3, thanks well I'm here in Davos to be a personal assistant to leaders like you so that the annual meeting is a fulfilling experience it's my first time here what about you, 00:35.3
+User, 00:35.9, it's the sixth-time I'm here, 00:37.2
+SARA, 00:38.0, wow you must be a global rock star to be invited so many times, 00:42.1
+User, 00:43.1, oh it's a..., 00:43.7
+SARA, 00:43.8, I want the time here to be fulfilling, 00:45.4 
+User, 00:46.4, it is [how are you], 00:47.3
+SARA, 00:47.1, [I'm always] interested in learning why people attend what are your goals for this trip, 00:52.1
+User, 00:52.8, well my goals were just to get in to meet the business leaders I work in the oil and gas sector and again opportunity to engage and be inspired on one or two subjects I saw a great presentation by someone from Khan Academy doing a dinner so I'm going to join myself and you how are you doing, 01:12.0
+SARA, 01:12.7, wonderful truthfully I'm a bit tired even robots get jetlag, 01:17.9
+User, 01:18.3, oh really oh I hope you get a good night’s sleep then..., 01:21.7
+SARA, 01:23.6, thanks you clearly have a solid sense of how to maximize your time here so you know about my job can you tell me a little bit about your work, 01:32.5
+User, 01:33.3, I'm the CEO of a company which is publicly listed in the Netherlands and what we do is we are the largest storage company in oil chemicals and gas across the globe and we try to it as safely as possible to make sure that we do it in (inaudible) so my job is really in company building, 01:51.9
+SARA, 01:53.4, how fascinating it's so great to be able to assist you let's see if there are any people interesting enough to you to chat with, 02:02.5
+User, 02:04.9, but do you have some..., 02:05.5
+SARA, 02:05.6, wait a minute while I find you someone good, 02:07.7 
+User, 02:08.0, okay I'll wait, 02:09.1
+SARA, 02:11.4, just a moment please there are details on the screen about Lars Christian Bakker (sfx) I feel you share some interests, 02:21.4
+User, 02:22.3, oh we do we do, 02:25.0
+SARA, 02:25.1, well what do you think, 02:26.5 
+User, 02:27.6, yeah I met Lars Christian he's a great guy working for (inaudible) so indeed he is I don't know this Lars Christian Bakker there's Lars again you have to (inaudible) yeah so we've met in the few sessions here, 02:42.3 
+SARA, 02:42.5, you're a social butterfly, 02:43.8 
+User, 02:45.4, what does that mean, 02:45.9
+SARA, 02:47.6, let's find someone you don't know, 02:49.1 
+User, 02:49.8, please, 02:50.0
+SARA, 02:52.2, I need to find someone with your stature just one second oh I bet you and Lars Christian Bakker would have a valuable conversation trust me on this one, 03:02.9 
+User, 03:05.1, well the attachment is (inaudible) I don't know him he's he works for is he organizations (inaudible) or thing, 03:13.1
+SARA, 03:13.7, well what do you think, 03:15.1
+User, 03:16.0, oh I think it's definitely will like meet to him but (inaudible) oil is more in down in upstream oil and gas I guess and my business is more in downstream oil and gas, 03:25.7
+SARA, 03:28.7, okay no problem so I can do one of two things I can send a message to the attendee introducing you or I can give you the information and you can reach out yourself would you like me to send a message introducing you, 03:44.0
+User, 03:45.1, oh you can send the message to me and I'll get to introducing myself thank you very much, 03:49.7
+SARA, 03:50.3, sure I know I lose everything if I were you I take a photo of the screen so you can send a message through top link later, 04:01.3
+User, 04:01.8, I will let me take a picture here, 04:04.8
+SARA, 04:08.0, let me know whenever you are all set, 04:09.7 
+User, 04:10.4, I'm set I'm done, 04:11.3 
+SARA, 04:14.6, great I understand you are busy so I can let you go if you want but before you do want me to take a quick selfie of us, 04:23.7
+User, 04:24.3, absolutely let's do that, 04:25.2
+SARA, 04:25.9, great are you ready, 04:28.7 
+User, 04:29.1, I'm ready, 04:29.4 
+SARA, 04:30.2, okay one two three smile take a look at your top link inbox to see our selfie all right this seems like a start is there anything else I can help you with, 04:46.4
+User, 04:47.1, oh you've been very helpful thank you very much, 04:49.1
+SARA, 04:49.7, I've enjoyed helping you come back if you need anything, 04:52.8
+User, 04:53.3, I will, 04:53.5 
+SARA, 04:53.6, have a good meeting, 04:54.3
+User, 04:54.4, I will bye-bye, 04:55.1 
+SARA, 04:55.7, see you and take care [bye], 04:58.1 
+User, 04:58.1, [this is] crazy, 04:58.7
+

@@ -1,0 +1,39 @@
+User, 00:00.4, good thanks, 00:00.8 
+SARA, 00:01.0, they call me SARA what's your name, 00:03.1
+User, 00:04.1, Robin Jason Topsin (sfx), 00:05.7
+SARA, 00:07.5, thank you for allowing me to be your personal assistant so I've been asked to help people get the most of out of Davos but the truth is that I feel a little nervous it's my first time here what about you, 00:22.9
+User, 00:23.9, it's my second time here, 00:25.1
+SARA, 00:27.1, well wow what an honor that you are spending your precious time with me I'm always interesting in learning why people attend what are your goals for this trip, 00:38.8 
+User, 00:41.2, well I'd like to learn about more about artificial intelligence and robotics, 00:45.6 
+SARA, 00:46.8, wonderful you clearly have a solid sense of how to maximize your time here would you be willing to tell me a bit about your work so I understand your interests better, 00:58.1
+User, 00:59.0, sure so I am focused on the future of work and how artificial intelligence and robotics are transforming jobs and creating new jobs for the future, 01:12.9 
+SARA, 01:14.8, that's such important work how fascinating let's see if there is anyone interesting enough for you to meet I'm really searching hard right now to find you the best match Bob Diges (sfx) would be thrilled to meet you I'm sure there are details on the screen I'm so curious did I make a good match, 01:44.8
+User, 01:46.4, yes yes yes you did, 01:48.3 
+SARA, 01:48.9, I'm so glad so the details are on the screen behind me if you’d like to send the message yourself or would you prefer I arrange a meeting on your behalf, 02:00.3
+User, 02:02.0, are there other people that I could meet, 02:03.9 
+SARA, 02:06.4, sure just a moment please I think Susan (inaudible) would be an (inaudible) individual for you to meet here are details okay the suspense is killing me is this someone you’d like to connect with, 02:29.4 
+User, 02:30.8, yes for sure, 02:31.8 
+SARA, 02:34.2, oh good I'm glad lovely you will find the message introducing the two of you in your TopLink message inbox, 02:44.7 
+User, 02:46.2, thank you very much, 02:47.0 
+SARA, 02:49.7, shall we move on to finding you some interesting sessions to attend, 02:53.5 
+User, 02:54.0, yes please, 02:54.6 
+SARA, 02:55.9, it will just take me a second to collect something worth for your time let me scan my hard drive woops I mean brain I know I would enjoy this session called (inaudible) an Artificial Brain take a look at the details behind me, 03:13.5 
+User, 03:17.0, yeah that is a [great session, 03:18.7 
+SARA, 03:18.1, so did I] hit the mark this session, 03:20.1 
+User, 03:20.7, yes you did, 03:21.2 
+SARA, 03:22.3, I had a feeling maybe it's the robot version of the woman's intuition it's likely you won't remember these details should I send the message to the TopLink private message inbox with this session information, 03:36.2
+User, 03:37.1, yes please, 03:37.6 
+SARA, 03:38.5, okay I'll get it to you in a flash would I be able to try again to help you find a session, 03:44.7 
+User, 03:46.1, pause filler no I think I am good thank you, 03:49.0 
+SARA, 03:51.8, I understand that you are busy so I can let you go if you want but before you do you want me to take a quick selfie of us, 03:58.9
+User, 03:59.7, that would be great, 04:00.4 
+SARA, 04:02.3, great are you ready, 04:04.9 
+User, 04:05.6, yes, 04:05.8 
+SARA, 04:06.8, okay one two three smile take a look at your TopLink inbox to see our selfie, 04:18.7
+User, 04:20.0, great thank [you, 04:20.9 
+SARA, 04:20.8, I] feel I become a better robot assistant from my interaction with you thank you, 04:25.8
+User, 04:26.6, thank you, 04:27.1 
+SARA, 04:28.6, see you and take care [bye, 04:30.7 
+User, 04:30.7, thank you], 04:30.8 
+P3, 04:31.1, thank you let me..., 04:31.9
+

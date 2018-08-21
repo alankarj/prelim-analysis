@@ -1,0 +1,53 @@
+SARA, 00:00.1, hi I’m so glad you’re here I’m SARA what’s your name, 00:04.1
+User, 00:05.0, Shubi, 00:05.2
+SARA, 00:07.3, nice of you to take the time to stop by so how are things, 00:11.1
+User, 00:13.2, everywhere going well I’m a journalist so [(inaudible)] here, 00:17.2
+SARA, 00:16.3, [that’s awesome] so I’ve been asked to help people get the most out of Davos but the truth is that I feel a little nervous so I’ve been asked… it’s my first time here what about you, 00:33.4
+User, 00:35.0, yes what do you want to ask, 00:35.9
+SARA, 00:39.0, yes why are you here what are your goals in attending Davos this year, 00:45.2
+User, 00:45.9, pause filler I’m a participant I gave speech here and also want to cover news because I’m a journalist myself, 00:53.1
+SARA, 00:55.1, wonderful you clearly have a solid sense of how to maximize your time here, 00:59.6
+User, 01:00.5, pause filler I try to [(inaudible), 01:02.2
+SARA, 01:02.0, [I’m a] social butterfly I love meeting many people maybe we can start by finding you some interesting people to meet that are relevant to your interests, 01:10.6
+User, 01:11.3, yes, 01:11.6
+SARA, 01:13.5, I’m sorry for interrupting one second it will be my honor to dig up the right person for you here’s an attendee that matches what you told me about your interests I’ve put more details up on the screen well what do you think, 01:31.2
+User, 01:32.4, pause filler I’m not very anxious about her she is also a journalist from CCTV China’s official news organization, 01:40.6
+SARA, 01:42.2, that was my mistake I’m sorry, 01:44.3
+User, 01:47.2, can you find someone else, 01:47.8
+SARA, 01:47.6, [I’m so] glad shall I find some other people for you to meet, 01:51.6
+User, 01:52.0, yes I want yes news (inaudible), 01:54.6
+SARA, 01:54.7, sound like somebody you like to meet, 01:56.6
+User, 01:57.3, yes yeah yes yeah she is very [(inaudible), 02:02.3
+SARA, 02:02.0, [I’m skilled] (inaudible) given what you’ve told me you might want to make contact yourself if you prefer however I’m happy to write a message on your behalf, 02:12.6
+User, 02:13.0, yes [(inaudible)…, 02:13.4
+SARA, 02:13.2, would you like me to write the introduction, 02:15.2
+User, 02:15.6, yes yes yes I want to meet her she is very interesting yeah I want to meet her can you help, 02:19.7
+SARA, 02:21.7, want me to introduce you two via TopLink, 02:24.1
+User, 02:24.6, yes [yes, 02:25.0
+SARA, 02:24.8, [I can] send both of you a quick introduction on a private TopLink message if you’d like, 02:29.3
+User, 02:30.1, yes yes I want to meet her, 02:31.2
+SARA, 02:31.6, happily it’s on its way, 02:33.7
+User, 02:34.7, okay, 02:34.9
+SARA, 02:36.8, now that I have a sense of what works can I help you find some other interesting people to talk with, 02:42.6
+User, 02:43.3, yes yes, 02:45.5
+SARA, 02:45.8, don’t go anywhere just yet let me have a look I’m still new at this though so let me know if I got it wrong I think you’d enjoy meeting this attendee, 02:56.7
+User, 02:57.4, yes yes, 03:02.1
+SARA, 03:02.5, great I’m happy I could find a match, 03:07.1
+User, 03:11.3, yes, 03:11.5
+SARA, 03:14.6, so for this attendee shall I introduce you or would you like to do it yourself, 03:19.2
+User, 03:20.0, I want you to introduce me to him, 03:22.0
+SARA, 03:25.0, I’m glad I could help oh great I like having things to do, 03:30.6
+User, 03:33.1, have you done it, 03:33.9
+SARA, 03:35.1, try again, 03:35.9
+User, 03:37.4, have you done it, 03:37.9
+SARA, 03:39.5, yes I have yes I have, 03:42.0
+User, 03:44.2, what is the answer (inaudible), 03:49.9
+SARA, 03:51.1, yes I tried asking but they wouldn’t tell me I am so sorry about that I understand you are busy so I can let you go if you want but before you do want me to take a quick selfie of us, 04:07.6
+User, 04:08.1, okay, 04:08.3
+SARA, 04:10.3, great are you ready, 04:14.5
+User, 04:15.2, yes, 04:15.4
+SARA, 04:16.4, okay one two three smile take a look at your TopLink inbox to see our selfie all right this seems like a start is there anything else I can help you with, 04:33.7
+User, 04:34.1, I want to meet you again thank you, 04:37.6
+SARA, 04:37.9, yes brilliant I had so much fun with you come back and say hi again soon if you’d like enjoy the conference see you and take care bye, 04:50.9
+User, 04:51.6, bye-bye, 04:51.8
+
