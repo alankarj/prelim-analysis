@@ -6,7 +6,7 @@ from sklearn.metrics import f1_score
 
 
 class Trainer:
-    def __init__(self, je, lr, n_epochs, print_every, thresh, model_type):
+    def __init__(self, je, lr, n_epochs, print_every, thresh, model_type, eval_data=None):
         self.je = je
         self.lr = lr
         self.n_epochs = n_epochs
@@ -16,6 +16,7 @@ class Trainer:
 
         self.loss_fn = None
         self.optimizer = None
+        self.eval_data = eval_data
 
         self.set_losses()
 
@@ -35,7 +36,7 @@ class Trainer:
         y_pred = prob_pred.copy()
         y_pred[prob_pred >= self.thresh] = 1
         y_pred[prob_pred < self.thresh] = 0
-        acc = f1_score(y_true, y_pred, average='micro')
+        acc = f1_score(y_true[:, :-1], y_pred[:, :-1], average='micro')
 
         if print_info:
             print("True y sum: ", np.sum(y_true))
@@ -52,6 +53,9 @@ class Trainer:
         print("Agent CS shape: ", A.shape)
         print("Agent TS shape: ", AT.shape)
 
+        best_epoch = 0
+        eval_loss = float("inf")
+
         for i in range(self.n_epochs):
             self.optimizer.zero_grad()
             output = self.je(U, A, R, AT)
@@ -64,6 +68,12 @@ class Trainer:
             loss.backward()
             self.optimizer.step()
 
+            if self.eval_data is not None:
+                temp_loss = self.eval(self.eval_data)
+                eval_loss = min(eval_loss, temp_loss)
+                if eval_loss == temp_loss:
+                    best_epoch = i
+
             if i % self.print_every == 0:
                 if self.model_type == 're':
                     print("Epoch: %d, Loss: %.3f" % (i, loss))
@@ -72,7 +82,13 @@ class Trainer:
                     print("Epoch: %d, Loss: %.3f, " % (i, loss), end='')
                     print("CS prediction accuracy: %.3f" % acc)
 
-    def eval(self, u_tr, r_tr, R, U, A, AT):
+        if self.eval_data is not None:
+            print("Best eval loss: %.3f at epoch: %d." % (eval_loss, best_epoch))
+
+        return eval_loss, best_epoch
+
+    def eval(self, eval_data, print_info=False):
+        u_tr, r_tr, R, U, A, AT = eval_data
         self.je.eval()
         output = self.je(U, A, R, AT)
 
@@ -80,13 +96,16 @@ class Trainer:
             loss = self.loss_fn(output, r_tr)
         else:
             loss = self.loss_fn(output, u_tr)
+            _, acc = self.accuracy(output.cpu().data.numpy(), u_tr.cpu().data.numpy(), print_info=print_info)
 
-        print("Validation stats:")
+        if print_info:
+            print("Validation stats:")
+            if self.model_type == 're':
+                print("Loss: %.3f" % loss)
+            else:
+                print("Loss: %.3f, CS prediction accuracy: %.3f" % (loss, acc))
+
         if self.model_type == 're':
-            print("Loss: %.3f" % loss)
             return loss
         else:
-            _, acc = self.accuracy(output.cpu().data.numpy(), u_tr.cpu().data.numpy(), print_info=True)
-            print("Loss: %.3f, " % loss, end='')
-            print("CS prediction accuracy: %.3f" % acc)
             return -1 * acc

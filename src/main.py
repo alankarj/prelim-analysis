@@ -65,7 +65,7 @@ def main():
         if config.neural:
             eval_data_type = config.data_types[2]
 
-            je, trainer = train_only(config.test_hidden_dim, config.test_leaky_slope,
+            je, trainer, _, _ = train_only(config.test_hidden_dim, config.test_leaky_slope,
                                      config.test_thresh, config.test_epochs, train_data)
 
             if c == 'all':
@@ -124,6 +124,7 @@ def main():
                 thresh = 0.4
                 best_leaky_slope = None
                 best_hidden_dim = None
+                best_epoch = None
 
                 for leaky_iter in range(config.num_leaky_iter):
                     leaky_slope = config.leaky_min + leaky_iter * config.leaky_step
@@ -137,58 +138,52 @@ def main():
                         np.random.seed(seed)
                         random.seed(seed)
 
-                        temp_loss = train_and_evaluate(hidden_dim, leaky_slope, thresh, config.n_epochs[-1], train_data, eval_data)
+                        _, _, temp_loss, temp_epoch = train_only(hidden_dim, leaky_slope, thresh, config.n_epochs, train_data, eval_data)
 
                         loss = min(loss, temp_loss)
                         if loss == temp_loss:
                             best_leaky_slope = leaky_slope
                             best_hidden_dim = hidden_dim
+                            best_epoch = temp_epoch
 
                 print("###########################################################")
-                print("Best loss: %.3f, best leaky slope: %.2f, best hidden dim: %d" % (
-                    loss, best_leaky_slope, best_hidden_dim))
+                print("Best loss: %.3f, best leaky slope: %.2f, best hidden dim: %d, best epoch: %d" % (
+                    loss, best_leaky_slope, best_hidden_dim, best_epoch))
 
             else:
                 loss = float("inf")
 
-                best_n_epochs = None
+                best_epoch = None
                 best_thresh = None
                 best_leaky_slope = None
                 best_hidden_dim = None
 
-                for n_epochs in config.n_epochs:
-                    for thresh in config.thresh:
-                        for leaky_iter in range(config.num_leaky_iter):
-                            leaky_slope = config.leaky_min + leaky_iter * config.leaky_step
-                            for hidden_dim in config.hidden_sizes:
-                                print("###########################################################")
-                                print("Num epochs: %d, Threshold: %.2f, Leaky slope: %.2f, Hidden dim: %d" %
-                                      (n_epochs, thresh, leaky_slope, hidden_dim))
-                                print("###########################################################")
+                for thresh in config.thresh:
+                    for leaky_iter in range(config.num_leaky_iter):
+                        leaky_slope = config.leaky_min + leaky_iter * config.leaky_step
+                        for hidden_dim in config.hidden_sizes:
+                            print("###########################################################")
+                            print("Threshold: %.2f, Leaky slope: %.2f, Hidden dim: %d" %
+                                  (thresh, leaky_slope, hidden_dim))
+                            print("###########################################################")
 
-                                seed = 0
-                                torch.manual_seed(seed)
-                                np.random.seed(seed)
-                                random.seed(seed)
+                            seed = 0
+                            torch.manual_seed(seed)
+                            np.random.seed(seed)
+                            random.seed(seed)
 
-                                temp_loss = train_and_evaluate(hidden_dim, leaky_slope, thresh, n_epochs, train_data, eval_data)
+                            _, _, temp_loss, temp_epoch = train_only(hidden_dim, leaky_slope, thresh, config.n_epochs, train_data, eval_data)
 
-                                loss = min(loss, temp_loss)
-                                if loss == temp_loss:
-                                    best_leaky_slope = leaky_slope
-                                    best_hidden_dim = hidden_dim
-                                    best_n_epochs = n_epochs
-                                    best_thresh = thresh
+                            loss = min(loss, temp_loss)
+                            if loss == temp_loss:
+                                best_leaky_slope = leaky_slope
+                                best_hidden_dim = hidden_dim
+                                best_epoch = temp_epoch
+                                best_thresh = thresh
 
                 print("###########################################################")
                 print("Best loss: %.3f, best n_epochs: %d, best thresh: %.2f, best leaky slope: %.2f, best hidden dim: %d" % (
-                    loss, best_n_epochs, best_thresh, best_leaky_slope, best_hidden_dim))
-
-
-def train_and_evaluate(hidden_dim, leaky_slope, thresh, n_epochs, train_data, eval_data, save_model=False):
-    je, trainer = train_only(hidden_dim, leaky_slope, thresh, n_epochs, train_data)
-    temp_loss = eval_only(eval_data, je, trainer, save_model)
-    return temp_loss
+                    loss, best_epoch, best_thresh, best_leaky_slope, best_hidden_dim))
 
 
 def get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type):
@@ -201,20 +196,18 @@ def get_eval_data(tr_ind, val_ind, te_ind, new_data, eval_data_type):
     return eval_data
 
 
-def train_only(hidden_dim, leaky_slope, thresh, n_epochs, train_data):
+def train_only(hidden_dim, leaky_slope, thresh, n_epochs, train_data, eval_data=None):
     input_size = config.get_input_size()
     output_size = config.get_output_size()
     je = JointEstimator(input_size, hidden_dim, output_size, leaky_slope,
                         config.window_type, config.feature_type, config.model_type)
-    trainer = Trainer(je, config.lr, n_epochs,
-                      config.print_every, thresh, config.model_type)
-
-    trainer.train(*train_data)
-    return je, trainer
+    trainer = Trainer(je, config.lr, n_epochs, config.print_every, thresh, config.model_type, eval_data)
+    loss, best_epoch = trainer.train(*train_data)
+    return je, trainer, loss, best_epoch
 
 
 def eval_only(eval_data, je, trainer, save_model=False):
-    temp_loss = trainer.eval(*eval_data)
+    temp_loss = trainer.eval(eval_data, print_info=True)
     if save_model:
         torch.save(je.state_dict(), 'weights_' + str(config.c) + '.t7')
     return temp_loss
