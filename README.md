@@ -37,3 +37,6 @@
 - **user_cs/pickle_files/**: Folder containing 2 files per session (session-id):
   - **session-id_user_cs.pkl**: Dictionary with turn numbers as keys and user CS list (SD, QESD, PR, HE, VSN, NONE) as values
   - **session-id_user_timestamps.pkl**: Dictionary with turn numbers as keys and timestamp (end time of turn) (in seconds) as values
+  
+## Training models:
+Modify the src/config.py file according to train/test condition, type of model, etc. and then run `python src/main.py`.
