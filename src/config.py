@@ -20,12 +20,12 @@ num_agent_cs = 8
 num_agent_ts = 26
 
 sr_type = 'user'
-testing = False
+testing = True
 neural = True
-c = 'all'
+c = 0
 model_type = 'sr'  # Possible values = ['re', 'sr']
-window_type = 1  # Possible values = [1, 2, 'linear_combination']
-feature_type = 'cs + rapport + ts'  # Possible values = ['cs_only', 'cs + rapport', 'cs + rapport + ts']
+window_type = 'linear_combination'  # Possible values = [1, 2, 'linear_combination']
+feature_type = 'cs + rapport'  # Possible values = ['cs_only', 'cs + rapport', 'cs + rapport + ts']
 
 # Hyperparameters
 num_leaky_iter = 5
@@ -37,9 +37,9 @@ thresh = [0.35, 0.40, 0.45, 0.50]
 
 # Test parameters
 test_hidden_dim = 16
-test_leaky_slope = 0.15
-test_thresh = 0.35
-test_epochs = 1597
+test_leaky_slope = 0.25
+test_thresh = 0.40
+test_epochs = 518
 
 
 def get_input_size():
