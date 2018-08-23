@@ -24,7 +24,9 @@
 - **clusters_full.pkl**: Dictionary with sessions as keys and clusters (0: P-Type, 1: I-Type) as values
 - **id_to_f_full.pkl**: Dictionary with session (ids) as keys and cubic spline interpolation functions as values
 - **train_data_full.pkl**: Dictionary of dictionaries. Contains training data for cluster-0, 1 and all sessions. Each dictionary has as keys: "user_cs_outp", "rapp_outp", "user_cs_inp_t-1", "user_cs_inp_t-2", "agent_cs_inp_t-0", "agent_cs_inp_t-1", "agent_cs_inp_t-2", "agent_intention_inp_t-0", "agent_intention_inp_t-1", "rapp_inp_t-1", "rapp_inp_t-2"
-- **weights_x.t7**: Trained neural network weights for different clusters (x = 0/1/all)
+- **weights_re_<cluster_id>.t7**: Weights for rapport estimator.
+- **weights_sr_user_<cluster_id>.t7**: Weights for the user social reasoner.
+- **weights_sr_agent.t7**: Weights for the agent social reasoner.
 
 ## Dataset annotations:
 - **agent_cs/**: Folder containing 3 files per session (session-id):
