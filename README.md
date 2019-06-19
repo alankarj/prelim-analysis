@@ -52,3 +52,6 @@ A. Jain, F. Pecune, Y. Matsuyama and J. Cassell, [A user simulator architecture 
   organization={ACM}
 }
 ```
+
+# Contact
+Please reach out to me at alankarjain91@gmail.com in case of any questions or concerns.
