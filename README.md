@@ -1,5 +1,5 @@
-# Davos dataset:
-## Input files:
+# Davos dataset
+## Input files
 - **user_cs_profile.csv**: CS usage profiles (SD, QESD, PR, HE, VSN, NONE) for each user (one per session)
 - **user_cs_profile_clusters.xlsx**: k-means clustering results for 5 different random initializations, final cluster (based on majority vote), avg. (and std. dev.) for use of every CS per cluster, MANOVA results for comparison of mean CS use
 - **final_clusters.csv**: Final clusters selected based on majority vote
@@ -16,7 +16,7 @@
 
 - **last_slice_length_full.txt**: Length of the last thin slice for every session
 
-## Key output files:
+## Key output files
 - **clusters_full.pkl**: Dictionary with sessions as keys and clusters (0: P-Type, 1: I-Type) as values
 - **id_to_f_full.pkl**: Dictionary with session (ids) as keys and cubic spline interpolation functions as values
 - **train_data_full.pkl**: Dictionary of dictionaries. Contains training data for cluster-0, 1 and all sessions. Each dictionary has as keys: "user_cs_outp", "rapp_outp", "user_cs_inp_t-1", "user_cs_inp_t-2", "agent_cs_inp_t-0", "agent_cs_inp_t-1", "agent_cs_inp_t-2", "agent_intention_inp_t-0", "agent_intention_inp_t-1", "rapp_inp_t-1", "rapp_inp_t-2"
@@ -24,7 +24,7 @@
 - **weights_sr_user_<cluster_id>.t7**: Weights for the user social reasoner.
 - **weights_sr_agent.t7**: Weights for the agent social reasoner.
 
-## Dataset annotations:
+## Dataset annotations
 - **agent_cs/**: Folder containing 3 files per session (session-id):
   - **session-id_agent_cs.pkl**: Dictionary with turn numbers as keys and agent CS list (ASN, ACK, SD, QESD, PR, HE, VSN, NONE) as values
   - **session-id_agent_intention.pkl**: Dictionary with turn numbers as keys and agent task strategy list as values
@@ -34,5 +34,5 @@
   - **session-id_user_cs.pkl**: Dictionary with turn numbers as keys and user CS list (SD, QESD, PR, HE, VSN, NONE) as values
   - **session-id_user_timestamps.pkl**: Dictionary with turn numbers as keys and timestamp (end time of turn) (in seconds) as values
   
-## Training models:
+## Training models
 Modify the src/config.py file according to train/test condition, type of model, etc. and then run `python src/main.py`.
