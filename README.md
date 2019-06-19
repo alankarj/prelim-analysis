@@ -12,10 +12,6 @@
 - **reco_sess_or_person.txt**: Type of recommendation (S: session, P: person)
 - **reco_times_full**: Time stamps of recommendations
 
-- **nlg_database.csv**: Template-based NLG database containing system natural language utterances for every combination of task and conversational strategy
-- **transcripts/**: Folder containing text transcripts of users' interactions with SARA (each file is named according to the session id)
-
-- **all_task_intentions_act_map_final.csv**: Task intentions to (reduced) task strategy map
 - **user_cs/**: Folder containing user CS annotations
 
 - **last_slice_length_full.txt**: Length of the last thin slice for every session
