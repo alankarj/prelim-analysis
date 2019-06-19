@@ -1,4 +1,4 @@
-# Davos dataset
+# SARA Conference dataset (2017)
 ## Input files
 - **user_cs_profile.csv**: CS usage profiles (SD, QESD, PR, HE, VSN, NONE) for each user (one per session)
 - **user_cs_profile_clusters.xlsx**: k-means clustering results for 5 different random initializations, final cluster (based on majority vote), avg. (and std. dev.) for use of every CS per cluster, MANOVA results for comparison of mean CS use
@@ -36,3 +36,19 @@
   
 ## Training models
 Modify the src/config.py file according to train/test condition, type of model, etc. and then run `python src/main.py`.
+
+# References
+Please cite the following paper if you found the code or the datasets in this or the prelim-analysis repositories useful.
+
+A. Jain, F. Pecune, Y. Matsuyama and J. Cassell, [A user simulator architecture for socially-aware conversational agents](https://dl.acm.org/citation.cfm?id=3267916)
+
+```
+@inproceedings{jain2018user,
+  title={A user simulator architecture for socially-aware conversational agents},
+  author={Jain, Alankar and Pecune, Florian and Matsuyama, Yoichi and Cassell, Justine},
+  booktitle={Proceedings of the 18th International Conference on Intelligent Virtual Agents},
+  pages={133--140},
+  year={2018},
+  organization={ACM}
+}
+```
