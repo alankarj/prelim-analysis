@@ -38,7 +38,7 @@
 Modify the src/config.py file according to train/test condition, type of model, etc. and then run `python src/main.py`.
 
 # References
-Please cite the following paper if you found the code or the datasets in this or the prelim-analysis repositories useful.
+Please cite the following paper if you found the code or the datasets in this or the social_user_simulator repositories useful.
 
 A. Jain, F. Pecune, Y. Matsuyama and J. Cassell, [A user simulator architecture for socially-aware conversational agents](https://dl.acm.org/citation.cfm?id=3267916)
 
