@@ -37,7 +37,7 @@ mkl-fft==1.0.0
 mkl-random==1.0.1
 mlxtend==0.12.0
 mord==0.6
-nbconvert==5.3.1
+nbconvert==6.3.0
 nbformat==4.4.0
 nltk==3.2.5
 notebook==5.4.1
